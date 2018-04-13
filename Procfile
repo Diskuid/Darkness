@@ -1,1 +1,1 @@
-worker: node darkness.js
+worker: node Darkness.js
