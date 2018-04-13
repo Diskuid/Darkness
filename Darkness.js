@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    console.log(`Estoy listo!, conectado en ${client.guilds.size} servidores y  ${client.users.size} usuarios.`);
-   client.user.setActivity(prefix+'help | By Diskuid', { type: 'WATCHING' });
+   client.user.setActivity('.help | By Diskuid', { type: 'PLAYING' });
 });
 var prefix = config.prefix;
 
