@@ -12,12 +12,10 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
-   msg.content = msg.content.toLowerCase();
-   
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
-  if(msg.content.startsWith(prefix + 'help')){
+  if (message.content.startsWith(prefix + 'help')){
       const embed = new Discord.RichEmbed()
       .setTitle("**Revisa tus mensajes privados.**")
       .setAuthor(message.author.username, message.author.avatarURL)
