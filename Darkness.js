@@ -12,9 +12,7 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
-   var msg = message.toLowerCase();
-   
-  if (msg.content.startsWith(prefix + "ping")) {
+  if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
   if (message.content.startsWith(prefix + 'help')){
