@@ -19,7 +19,6 @@ client.on("message", (message) => {
     message.channel.send("pong!");
   } else
   if(message.content.startsWith(prefix + 'help')){
-      const command = args.shift().toLowerCase();
       const embed = new Discord.RichEmbed()
       .setTitle("**Revisa tus mensajes privados.**")
       .setAuthor(message.author.username, message.author.avatarURL)
@@ -72,6 +71,8 @@ if (message.content.startsWith(prefix +"Darkrai" )){
   message.channel.send({embed});
 } else
   if (message.content.startsWith(prefix +"test" )){
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
     const embed = new Discord.RichEmbed() 
     .setTitle("Este es su título, puede contener 256 caracteres")
     .setAuthor(message.author.username, message.author.avatarURL)
