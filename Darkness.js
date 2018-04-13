@@ -17,7 +17,7 @@ client.on("message", (message) => {
   if (msg.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
-  if (message.content.startsWith(prefix + 'help')){
+  if (msg.startsWith.startsWith(prefix + 'help')){
       const embed = new Discord.RichEmbed()
       .setTitle("**Revisa tus mensajes privados.**")
       .setAuthor(message.author.username, message.author.avatarURL)
@@ -38,7 +38,7 @@ client.on("message", (message) => {
                             '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n```');
         
        } else
-       if (message.content.startsWith(prefix +"hola" )){
+       if (msg.startsWith.startsWith(prefix +"hola" )){
         const embed = new Discord.RichEmbed() 
         .setAuthor("Hola! "+message.author.username+" o/", message.author.avatarURL)
         .setColor(0x000000)
@@ -47,7 +47,7 @@ client.on("message", (message) => {
         message.channel.send({embed});
         } else
 
-if (message.content.startsWith(prefix +"Jirachi" )){
+if (msg.startsWith.startsWith(prefix +"jirachi" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0xd53939)
   .setFooter("Darkness Guild", client.user.avatarURL)
@@ -58,7 +58,7 @@ if (message.content.startsWith(prefix +"Jirachi" )){
   
   message.channel.send({embed});
 } else
-if (message.content.startsWith(prefix +"Darkrai" )){
+if (msg.startsWith.startsWith(prefix +"darkrai" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0x000000)
   .setFooter("Darkness Guild", client.user.avatarURL)
@@ -69,7 +69,7 @@ if (message.content.startsWith(prefix +"Darkrai" )){
   
   message.channel.send({embed});
 } else
-  if (message.content.startsWith(prefix +"test" )){
+  if (msg.startsWith.startsWith(prefix +"test" )){
     const embed = new Discord.RichEmbed() 
     .setTitle("Este es su título, puede contener 256 caracteres")
     .setAuthor(message.author.username, message.author.avatarURL)
@@ -88,7 +88,7 @@ if (message.content.startsWith(prefix +"Darkrai" )){
     
     message.channel.send({embed});
   } else
-  if (message.content.startsWith(prefix +"blog" )){
+  if (msg.startsWith.startsWith(prefix +"blog" )){
     const embed = new Discord.RichEmbed() 
     .setTitle("Darkness Guild - Blog")
     .setAuthor(message.author.username, message.author.avatarURL)
