@@ -4,7 +4,13 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    console.log(`Estoy listo!, conectado en ${client.guilds.size} servidores y  ${client.users.size} usuarios.`);
-   client.user.setActivity('.help | By Diskuid', { type: 'Playing' });
+       bot.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
+    bot.user.setPresence({
+        game: {
+            name: 'Type !help',
+            type: 0
+        }
+    });
 });
 var prefix = config.prefix;
 
