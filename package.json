@@ -2,7 +2,7 @@
   "name": "Darkness",
   "description": "test",
   "version": "0.0.0",
-  "main": "bot.js",
+  "main": "Darkness.js",
   "scripts": {
     "start": "node bot.js"
   },
