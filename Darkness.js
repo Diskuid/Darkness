@@ -19,7 +19,8 @@ client.on("message", (message) => {
     message.channel.send("pong!");
   } else
   if(message.content.startsWith(prefix + 'help')){
-      const embed = new Discord.RichEmbed() 
+      const embed = new Discord.RichEmbed()
+      const command = args.shift().toLowerCase();
       .setTitle("**Revisa tus mensajes privados.**")
       .setAuthor(message.author.username, message.author.avatarURL)
       .setColor(0xd53939)
