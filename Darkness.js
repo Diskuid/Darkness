@@ -11,8 +11,10 @@ var prefix = config.prefix;
 client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
-  
-  if (message.content.startsWith(prefix + "ping")) {
+
+    msg = message.content.toLowerCase();
+   
+  if (msg.content.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
   if (message.content.startsWith(prefix + "ping")) {
@@ -71,8 +73,6 @@ if (message.content.startsWith(prefix +"Darkrai" )){
   message.channel.send({embed});
 } else
   if (message.content.startsWith(prefix +"test" )){
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-    const command = args.shift().toLowerCase();
     const embed = new Discord.RichEmbed() 
     .setTitle("Este es su título, puede contener 256 caracteres")
     .setAuthor(message.author.username, message.author.avatarURL)
