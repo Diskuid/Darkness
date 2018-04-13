@@ -4,13 +4,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    console.log(`Estoy listo!, conectado en ${client.guilds.size} servidores y  ${client.users.size} usuarios.`);
-       bot.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
-    bot.user.setPresence({
-        game: {
-            name: 'Type !help',
-            type: 0
-        }
-    });
+   client.user.setActivity('.help')
 });
 var prefix = config.prefix;
 
