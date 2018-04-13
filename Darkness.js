@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    console.log(`Estoy listo!, conectado en ${client.guilds.size} servidores y  ${client.users.size} usuarios.`);
-   client.user.setActivity('.help')
+   client.user.setGame('.help')
 });
 var prefix = config.prefix;
 
