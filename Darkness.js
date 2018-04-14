@@ -47,6 +47,17 @@ client.on("message", (message) => {
         message.channel.send({embed});
         } else
 
+                  } else
+       if (msg.startsWith(prefix +"alola" )){
+        const embed = new Discord.RichEmbed() 
+        .setAuthor("Alola! "+message.author.username+" o/", message.author.avatarURL)
+        .setColor(0x000000)
+        .setImage("https://cdn.discordapp.com/attachments/434155755357208587/434535939147169797/alola_vulpix_7u7.gif");
+        
+        message.channel.send({embed});
+        } else
+           
+           
 if (msg.startsWith(prefix +"jirachi" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0xd53939)
