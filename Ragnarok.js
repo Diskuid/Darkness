@@ -32,7 +32,7 @@ client.on("message", (message) => {
                             '-> '+prefix+'pvp reglas     :: Muestra las reglas del PvP.\n'+
                             '-> '+prefix+'pvp report     :: Te da el link directo del foro para reportar.\n\n'+
                             'Otros\n'+
-                            '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n+'
+                            '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n'+
                             '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
