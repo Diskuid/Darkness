@@ -25,7 +25,7 @@ client.on("message", (message) => {
       .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
       message.channel.send({embed});
-        message.author.send('```\n**Ragnarök bot - Comandos**\n\n'+
+        message.author.send('```\n** Ragnarök bot - Comandos **\n\n'+
                             'PVP\n'+
                             '-> '+prefix+'pvp            :: Muestra los comandos que hay relacionados al PvP.\n'+  
                             '-> '+prefix+'pvp pokeban    :: Muestra los pokemon baneados en PvP.\n'+
