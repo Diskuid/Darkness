@@ -22,10 +22,10 @@ client.on("message", (message) => {
       .setTitle("**Revisa tus mensajes privados.**")
       .setAuthor(message.author.username, message.author.avatarURL)
       .setColor(0xd53939)
-      .setFooter("Darkness Guild", client.user.avatarURL)
+      .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
       message.channel.send({embed});
-        message.author.send('```\n**DARKNESS - Comandos**\n\n'+
+        message.author.send('```\n**RAGNARÖK - Comandos**\n\n'+
                             'PVP\n'+
                             '-> '+prefix+'pvp            :: Muestra los comandos que hay relacionados al PvP.\n'+  
                             '-> '+prefix+'pvp pokeban    :: Muestra los pokemon baneados en PvP.\n'+
@@ -57,7 +57,7 @@ client.on("message", (message) => {
 if (msg.startsWith(prefix +"jirachi" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0xd53939)
-  .setFooter("Darkness Guild", client.user.avatarURL)
+  .setFooter("Ragnarök Guild", client.user.avatarURL)
   .setTimestamp()
   .setImage("http://78.media.tumblr.com/1be1b280590c698a07924540e3f497dc/tumblr_nc793zXLmN1qbmz7eo1_500.gif")
   .addField("Jirachi",
@@ -68,7 +68,7 @@ if (msg.startsWith(prefix +"jirachi" )){
 if (msg.startsWith(prefix +"darkrai" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0x000000)
-  .setFooter("Darkness Guild", client.user.avatarURL)
+  .setFooter("Ragnarök Guild", client.user.avatarURL)
   .setTimestamp()
   .setImage("https://78.media.tumblr.com/0df500bfa372165438dd16aed8aca7bc/tumblr_nit4mcbDwq1qlndspo1_500.gif")
   .addField("Darkrai",
@@ -97,11 +97,11 @@ if (msg.startsWith(prefix +"darkrai" )){
   } else
   if (msg.startsWith(prefix +"blog" )){
     const embed = new Discord.RichEmbed() 
-    .setTitle("Darkness Guild - Blog")
+    .setTitle("Ragnarök Guild - Blog")
     .setAuthor(message.author.username, message.author.avatarURL)
     .setColor(0x00AE86)
     .setDescription("Este es el cuerpo principal del texto, puede contener 2048 caracteres.")
-    .setFooter("Darkness Guild", client.user.avatarURL)
+    .setFooter("Ragnarök Guild", client.user.avatarURL)
     .setImage(message.author.avatarURL)
     .setThumbnail(message.author.avatarURL)
     .setTimestamp()
