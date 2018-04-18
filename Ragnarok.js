@@ -25,17 +25,15 @@ client.on("message", (message) => {
       .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
       message.channel.send({embed});
-        message.author.send('```\n**RAGNARÖK - Comandos**\n\n'+
+        message.author.send('```\n**Ragnarök bot - Comandos**\n\n'+
                             'PVP\n'+
                             '-> '+prefix+'pvp            :: Muestra los comandos que hay relacionados al PvP.\n'+  
                             '-> '+prefix+'pvp pokeban    :: Muestra los pokemon baneados en PvP.\n'+
                             '-> '+prefix+'pvp reglas     :: Muestra las reglas del PvP.\n'+
-                            '-> '+prefix+'pvp report     :: Te da el link directo del foro para reportar a alguien.\n'+
-                            '-> '+prefix+'server         :: Muestra información de un servidor determinado.\n'+
-                            '-> '+prefix+'8ball          :: El bot respondera a tus preguntas.\n'+
-                            '-> '+prefix+'ban <@user>    :: Banear a un usuario del servidor incluye razon.\n'+
-                            '-> '+prefix+'kick <@user>   :: Patear a un usuario del servidor incluye razon.\n'+
-                            '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n```');
+                            '-> '+prefix+'pvp report     :: Te da el link directo del foro para reportar.\n\n'+
+                            'Otros\n'+
+                            '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n+'
+                            '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
        if (msg.startsWith(prefix +"hola" )){
