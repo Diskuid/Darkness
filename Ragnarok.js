@@ -41,7 +41,7 @@ client.on("message", (message) => {
        if (msg.startsWith(prefix +"hola" )){
         const embed = new Discord.RichEmbed() 
         .setAuthor("Hola! "+message.author.username+" o/", message.author.avatarURL)
-        .setColor(0xcc0000)
+        .setColor(0x15d1be)
         .setImage("https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif");
         
         message.channel.send({embed});
@@ -49,7 +49,7 @@ client.on("message", (message) => {
        if (msg.startsWith(prefix +"alola" )){
         const embed = new Discord.RichEmbed() 
         .setAuthor("Alola! "+message.author.username+" o/", message.author.avatarURL)
-        .setColor(0xcc0000)
+        .setColor(0x15d1be)
         .setImage("https://cdn.discordapp.com/attachments/434155755357208587/434535939147169797/alola_vulpix_7u7.gif");
         
         message.channel.send({embed});
