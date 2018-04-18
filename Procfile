@@ -1,1 +1,1 @@
-worker: node Darkness.js
+worker: node Ragnarok.js
