@@ -36,7 +36,7 @@ client.on("message", (message) => {
                             '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
-       if (msg.startsWith(prefix +"hola" )){
+       if (msg.startsWith( "hola" )){
         const embed = new Discord.RichEmbed() 
         .setAuthor("Hola! "+message.author.username+" o/", message.author.avatarURL)
         .setColor(0x15d1be)
