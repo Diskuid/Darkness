@@ -12,11 +12,11 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
-   var msg = message.content.toLowerCase();
+   let msg = message.content.toLowerCase();
    let cont = message.content.slice(prefix.length).split(" ");
    let args = cont.slice(1);
    
-  if (msg.startsWith(prefix + "Purge")) {
+  if (msg.startsWith(prefix + 'Purge')) {
 async function purge() {
    message.delete();
    
@@ -26,7 +26,7 @@ async function purge() {
    }
    
    if (isNaN(args[0])) {
-         message.channel.send('Please post a number');
+         message.channel.send('Please use a number');
       return;
    }
    
