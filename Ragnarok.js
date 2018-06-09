@@ -45,6 +45,7 @@ client.on("message", (message) => {
             const fetched = await message.channel.fetchMessages({limit: args[0]}); // This grabs the last number(args) of messages in the channel.
             console.log(fetched.size + ' Mensajes encontrados, borrando...'); // Lets post into console how many messages we are deleting
 
+            message.delete();
             // Deleting the messages
             message.channel.bulkDelete(fetched)
                 .catch(error => message.channel.send(`Error: ${error}`)); // If it finds an error, it posts it into the channel.
@@ -105,7 +106,7 @@ if (command === 'hola') {
        if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
-            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2kYDQPv');
+            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2JwW1q8');
        
       } else
 if (command === 'alola') {
@@ -114,7 +115,7 @@ if (command === 'alola') {
        if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
-            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2HzFi3U');
+            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2y7EcwX');
        
       } else
        if (msg.startsWith(prefix +"alola2" )){
