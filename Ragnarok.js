@@ -17,6 +17,7 @@ client.on("message", (message) => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     let sender = message.author;   
+    let texto = args.join(" ");
    
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
@@ -75,7 +76,8 @@ if (msg.startsWith(prefix + "ping")) {
        } else
 if (msg.startsWith(prefix + "hola")) {
             message.delete(); 
-            message.channel.send(sender + ' Te envia un saludo, ' + message + '\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
+            if(!texto) return message.channel.send(sender + ' Te envia un saludo, ' + message + '\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
+            message.channel.send(texto);
        } else
 if (msg.startsWith(prefix + "hola2" )){
   const embed = new Discord.RichEmbed() 
