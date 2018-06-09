@@ -94,7 +94,7 @@ if (command === 'hola') {
        if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
-            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://bit.ly/2Hz9Lis');
+            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://imgur.com/I2H5bp4');
        
       } else
 if (msg.startsWith(prefix + "hola2" )){
