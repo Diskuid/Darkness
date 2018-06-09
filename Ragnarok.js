@@ -26,7 +26,7 @@ async function purge() {
    }
    
    if (isNaN(args[0])) {
-         message.channel.send('Por favor usa un numero. \n Uso:' prefix + '(Numero de mensajes a borrar)');
+         message.channel.send('Por favor usa un numero. \n Uso: .purge (Numero de mensajes a borrar)');
       return;
    }
    
