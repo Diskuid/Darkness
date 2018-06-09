@@ -40,7 +40,7 @@ async function purge() {
 
      purge();
    
-  } else
+  } 
 if (msg.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
