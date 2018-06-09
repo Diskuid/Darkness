@@ -89,6 +89,7 @@ if (msg.startsWith(prefix + "ping")) {
         
        } else
 if (command === 'hola') {
+       message.delete();
 
        if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
 
