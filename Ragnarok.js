@@ -29,21 +29,21 @@ client.on("message", (message) => {
             message.delete(); // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
 
             // Now, we want to check if the user has the `bot-commander` role, you can change this to whatever you want.
-            if (!message.member.roles.find("name", "bot-commander")) { // This checks to see if they DONT have it, the "!" inverts the true/false
-                message.channel.send('You need the \`bot-commander\` role to use this command.'); // This tells the user in chat that they need the role.
+            if (!message.member.roles.find("name", "Lider")) { // This checks to see if they DONT have it, the "!" inverts the true/false
+                message.channel.send('Necesitas el rol \`Lider\` para usar este comando.'); // This tells the user in chat that they need the role.
                 return; // this returns the code, so the rest doesn't run.
             }
 
             // We want to check if the argument is a number
             if (isNaN(args[0])) {
                 // Sends a message to the channel.
-                message.channel.send('Please use a number as your arguments. \n Usage: ' + prefix + 'purge <amount>'); //\n means new line.
+                message.channel.send('Por favor usa un numero. \n Ejemplo: ' + prefix + 'purge <numero>'); //\n means new line.
                 // Cancels out of the script, so the rest doesn't run.
                 return;
             }
 
             const fetched = await message.channel.fetchMessages({limit: args[0]}); // This grabs the last number(args) of messages in the channel.
-            console.log(fetched.size + ' messages found, deleting...'); // Lets post into console how many messages we are deleting
+            console.log(fetched.size + ' Mensajes encontrados, borrando...'); // Lets post into console how many messages we are deleting
 
             // Deleting the messages
             message.channel.bulkDelete(fetched)
@@ -58,9 +58,9 @@ client.on("message", (message) => {
 if(command === 'kick' ){
 
 
-    if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
-    if (!razon) return message.channel.send('Escriba una razón, `-kick @username [razón]`');
-    if (!message.guild.member(user).kickable) return message.reply('No puedo patear al usuario mencionado.');
+    if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
+    if (!razon) return message.channel.send('Escribe una razón, `.kick @username [razón]`');
+    if (!message.guild.member(user).kickable) return message.reply('No se ha podido kickear al usuario mencionado.');
      
     message.guild.member(user).kick(razon);
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
