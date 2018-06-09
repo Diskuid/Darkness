@@ -14,7 +14,7 @@ client.on("message", (message) => {
    
    let msg = message.content.toLowerCase();
    let cont = message.content.slice(prefix.length).split(" ");
-   let args = cont.slice(1);
+   let args = cont.slice(0);
    
   if (msg.startsWith(prefix + 'Purge')) {
 async function purge() {
