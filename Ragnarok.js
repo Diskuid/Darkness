@@ -56,8 +56,10 @@ client.on("message", (message) => {
 
     }
 if(command === 'kick' ){
-
-
+            if (!message.member.roles.find("name", "Lider")) { // This checks to see if they DONT have it, the "!" inverts the true/false
+                message.channel.send('Necesitas el rol \`Lider\` para usar este comando.'); // This tells the user in chat that they need the role.
+                return; // this returns the code, so the rest doesn't run.
+            }
     if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
     if (!razon) return message.channel.send('Escribe una razón, `.kick @username [razón]`');
     if (!message.guild.member(user).kickable) return message.reply('No se ha podido kickear al usuario mencionado.');
