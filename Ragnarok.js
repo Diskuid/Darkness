@@ -115,7 +115,7 @@ if (msg.startsWith(prefix +"darkrai" )){
     
     message.channel.send({embed});
     } 
-     if(prefix + "purge") {
+     if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
