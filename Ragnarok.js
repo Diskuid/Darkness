@@ -16,6 +16,8 @@ client.on("message", (message) => {
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
     let sender = message.author;   
+   const argss = message.content.slice(prefix.length).trim().split(/ +/g);
+   const command = args.shift().toLowerCase();
    
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
