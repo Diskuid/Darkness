@@ -76,7 +76,7 @@ if (msg.startsWith(prefix + "ping")) {
        } else
 if (msg.startsWith(prefix + "hola")) {
             message.delete(); 
-            if(!texto) return message.channel.send(sender + ' Te envia un saludo, ' + message + '\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
+            if(!texto) return message.channel.send(sender + ' Te envia un saludo, ' + args[1] + '\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
             message.channel.send(texto);
        } else
 if (msg.startsWith(prefix + "hola2" )){
