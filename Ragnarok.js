@@ -94,7 +94,7 @@ if (command === 'hola') {
        if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
-            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
+            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://ragnarokguild.page.link/y6N7');
        
       } else
 if (msg.startsWith(prefix + "hola2" )){
