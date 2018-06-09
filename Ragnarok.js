@@ -12,11 +12,11 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
-    let msg = message.content.toLowerCase();
+    let msg = message.content.toUpperCase();
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
 
-    if (msg.startsWith(prefix + 'purge')) {
+    if (msg.startsWith(prefix + 'PURGE')) {
 async function purge() {
    message.delete();
    
