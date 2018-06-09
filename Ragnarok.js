@@ -20,18 +20,18 @@ client.on("message", (message) => {
 async function purge() {
    message.delete();
    
-   if (!message.member.roles.find("name", "bot-commander")) {
-            message.channel.send('you need the bot-commander role to use this command.')
+   if (!message.member.roles.find("name", "Lider")) {
+            message.channel.send('Necesitas el rol **Lider** para poder usar este comando.')
      return;
    }
    
    if (isNaN(args[0])) {
-         message.channel.send('Please use a number');
+         message.channel.send('Por favor usa un numero. \n Uso:' Prefix + '(Numero de mensajes a borrar)');
       return;
    }
    
    const fetched = await message.channel.fetchMessages({limit: args[0]});
-   console.log(fetched.size + 'messages found, deleting...');
+   console.log(fetched.size + 'Mensajes encontrados, borrando...');
    
    message.channel.bulkDelete(fetched)
       .catch(error => message.channel.send('Error: ${error}'));
