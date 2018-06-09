@@ -26,7 +26,7 @@ client.on("message", (message) => {
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
         async function purge() {
-            message.delete(); // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
+// Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
 
             // Now, we want to check if the user has the `bot-commander` role, you can change this to whatever you want.
             if (!message.member.roles.find("name", "Lider")) { // This checks to see if they DONT have it, the "!" inverts the true/false
@@ -102,21 +102,22 @@ if (msg.startsWith(prefix + "yin")) {
 if (command === 'hola') {
        message.delete();
 
-       if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
+       if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
             message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2kYDQPv');
        
       } else
-if (msg.startsWith(prefix + "hola2" )){
-  const embed = new Discord.RichEmbed() 
-  .setAuthor("Hola! "+message+" o/", message.author.avatarURL)
-  .setColor(0x15d1be)
-  .setImage("https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif");
-        
-        message.channel.send({embed});
-        } else
-       if (msg.startsWith(prefix +"alola" )){
+if (command === 'alola') {
+       message.delete();
+
+       if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
+
+            message.guild.member(user);
+            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2HzFi3U');
+       
+      } else
+       if (msg.startsWith(prefix +"alola2" )){
         const embed = new Discord.RichEmbed() 
         .setAuthor("Alola! "+message.author.username+" o/", message.author.avatarURL)
         .setColor(0x15d1be)
