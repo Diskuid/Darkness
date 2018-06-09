@@ -73,7 +73,7 @@ if (msg.startsWith(prefix + "ping")) {
         
        } else
 if (msg.startsWith(prefix + "hola")) {
-           async function purge() {
+           async function hola() {
             message.delete(); 
   message.channel.send(message+'\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
        } else
