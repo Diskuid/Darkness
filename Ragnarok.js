@@ -66,9 +66,21 @@ if(command === 'kick' ){
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
 
 }
-if (msg.startsWith(prefix + "ping")) {
-    message.channel.send("pong!");
-  } else
+if (msg.startsWith(prefix + "yin")) {
+    message.channel.send("yang!");
+  }
+   if (command === 'ping') {
+
+    let ping = Math.floor(message.client.ping);
+    
+    message.channel.send(":ping_pong: Pong!")
+      .then(m => {
+
+          m.edit(`:incoming_envelope: Ping Mensajes: \`${Math.floor(m.createdTimestamp - Date.now())} ms\`\n:satellite_orbital: Ping DiscordAPI: \`${ping} ms\``);
+      
+      });
+    
+  }else
   if (msg.startsWith(prefix + 'help')){
       const embed = new Discord.RichEmbed()
       .setTitle("**Revisa tus mensajes privados.**")
