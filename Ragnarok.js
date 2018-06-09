@@ -13,8 +13,35 @@ client.on("message", (message) => {
   if (message.author.bot) return;
    
    var msg = message.content.toLowerCase();
+   let cont = message.content.slice(prefix.length).split(" ");
+   let args = cont.slice(1);
    
-  if (msg.startsWith(prefix + "ping")) {
+  if (msg.startsWith(prefix + "Purge")) {
+async function purge() {
+   message.delete();
+   
+   if (!message.member.roles.find("name", "bot-commander")) {
+            message.channel.send('you need the \`bot-commander\` role to use this command.')
+     return;
+   }
+   
+   if (isNaN(args[0])) {
+         message.channel.send('Please post a number');
+      return;
+   }
+   
+   const fetched = await message.channel.fetchMessages({limit: args[0]});
+   console.log(fetched.size + 'messages found, deleting...');
+   
+   message.channel.bulkDelete(fetched)
+      .catch(error => message.channel.send('Error: ${error}'));
+   
+}
+
+     purge();
+   
+  } else
+if (msg.startsWith(prefix + "ping")) {
     message.channel.send("pong!");
   } else
   if (msg.startsWith(prefix + 'help')){
