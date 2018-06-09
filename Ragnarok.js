@@ -88,7 +88,7 @@ if (msg.startsWith(prefix + "ping")) {
                             '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
-if (msg.startsWith(prefix + "hola")) {
+if (command === 'hola') {
 
        if (message.mentions.users.size < 1) return message.reply('Debe mencionar a alguien.').catch(console.error);
 
