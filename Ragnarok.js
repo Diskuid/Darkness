@@ -186,8 +186,7 @@ if (msg.startsWith(prefix +"darkrai" )){
     
     message.channel.send({embed});
     } 
-   
-   if (command === 'spec'){
+if (command === 'spec'){
         message.author.send("See or Change?");
         const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         console.log(collector)
@@ -197,6 +196,7 @@ if (msg.startsWith(prefix +"darkrai" )){
             } else if (message.content == "Change") {
                 message.channel.send("You Want To Change Your Spec OK!");
             }
+        })
   
 });
 
