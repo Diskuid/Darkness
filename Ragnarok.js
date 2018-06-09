@@ -36,10 +36,10 @@ client.on("message", (message) => {
                             '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
-if (msg.startsWith(prefix + "holi")) {
-  message.channel.send(message+'\n\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
+if (msg.startsWith(prefix + "hola")) {
+  message.channel.send(message+'\n https://media.tenor.com/images/8033571a6b54dad614051d4fa0569dd8/tenor.gif');
        } else
-if (msg.startsWith(prefix + "hola" )){
+if (msg.startsWith(prefix + "hola2" )){
   const embed = new Discord.RichEmbed() 
   .setAuthor("Hola! "+message+" o/", message.author.avatarURL)
   .setColor(0x15d1be)
