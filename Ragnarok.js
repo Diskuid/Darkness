@@ -12,7 +12,7 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
-    let msg = message.content.toLowerCase();
+    var msg = message.content.toLowerCase();
     let cont = message.content.slice(prefix.length).split(" ");
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
@@ -27,7 +27,7 @@ client.on("message", (message) => {
         }
     if (msg.includes('alv')) {
             message.delete();
-            message.reply('Por favor no uses malas palabras. :Smash:');
+            message.reply('Por favor no uses malas palabras. \:Smash\:');
     }
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
