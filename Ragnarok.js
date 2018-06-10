@@ -20,8 +20,15 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-    
    
+      
+    if (sender.id === '435965480826568704') {
+            return;
+        }
+    if (msg.includes('alv')) {
+            message.delete();
+            message.reply('Por favor no uses malas palabras. :Smash:');
+    }
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
