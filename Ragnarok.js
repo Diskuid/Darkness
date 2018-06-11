@@ -116,6 +116,15 @@ if (command === 'hola') {
             message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2JwW1q8');
        
       } else
+if (command === '123') {
+
+message.reply('nel prro')
+  .then(msg => {
+    msg.delete(10000)
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+
+      } else
 if (command === 'alola') {
        message.delete();
 
