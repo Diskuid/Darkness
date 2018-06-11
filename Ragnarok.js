@@ -44,7 +44,6 @@ if (command === "menu") {
             .catch(() => {
               // Do something with error 
             });
-        });
     }
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
