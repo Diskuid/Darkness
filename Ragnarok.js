@@ -30,8 +30,8 @@ client.on("message", (message) => {
             message.reply('Por favor no uses malas palabras. \:Smash\:');
     }
    
-   if (command === "menu") {
-        message.channel.send('hola');
+if (command === "menu") {
+        message.channel.send({file: './images/menu1.png'});
         .then(() => {
           message.channel.awaitMessages(response => response.content === 'next', {
             max: 1,
@@ -39,7 +39,7 @@ client.on("message", (message) => {
             errors: ['time'],
           })
           .then((collected) => {
-              message.channel.send('hola');
+              message.channel.send({file: './images/menu2.png'});
             })
             .catch(() => {
               // Do something with error 
