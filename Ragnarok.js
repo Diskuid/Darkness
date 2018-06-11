@@ -29,22 +29,6 @@ client.on("message", (message) => {
             message.delete();
             message.reply('Por favor no uses malas palabras. \:Smash\:');
     }
-   
-if (command === "menu") {
-        message.channel.send({file: './images/menu1.png'});
-        .then(() => {
-          message.channel.awaitMessages(response => response.content === 'next', {
-            max: 1,
-            time: 30000,
-            errors: ['time'],
-          })
-          .then((collected) => {
-              message.channel.send({file: './images/menu2.png'});
-            })
-            .catch(() => {
-              // Do something with error 
-            });
-    }
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
