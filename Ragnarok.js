@@ -27,7 +27,7 @@ client.on("message", (message) => {
         }
     if (msg.includes('alv')) {
             message.delete();
-            message.author.send('Por favor no uses malas palabras. \:Smash\:');
+            message.reply('Por favor no uses malas palabras. \:Smash\:');
     }
     // Purge
     if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
