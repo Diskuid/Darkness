@@ -36,7 +36,7 @@ client.on("message", (message) => {
 // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
 
             // Now, we want to check if the user has the `bot-commander` role, you can change this to whatever you want.
-            if (!message.member.roles.find("name", "Lider", "Leader Guild")) { // This checks to see if they DONT have it, the "!" inverts the true/false
+            if (!message.member.roles.find("name", "Lider" "Leader Guild")) { // This checks to see if they DONT have it, the "!" inverts the true/false
                 message.channel.send('Necesitas el rol \`Lider\` para usar este comando.'); // This tells the user in chat that they need the role.
                 return; // this returns the code, so the rest doesn't run.
             }
