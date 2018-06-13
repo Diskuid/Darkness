@@ -139,7 +139,7 @@ if (command === 'pvp') {
                             '  7.- Solo puedes usar 1 de tus cuentas para PvP competitivo cada temporada. Usar cualquier cuenta que no sea tuya legítimamente, o usar mas de una cuenta resultara en un severo castigo.\n'+
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
                             '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que deberia. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
-                            '  - Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        
       } else
 if (command === 'error') {
