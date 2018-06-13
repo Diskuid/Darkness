@@ -118,7 +118,12 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
    
-            message.channel.send('\n https://gph.is/2JwW1q8');
+            message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+                            '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
+                            '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneables del PvP.\n'+
+                            '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
+                            '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
+                            '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
        
       } else
 if (command === 'error') {
