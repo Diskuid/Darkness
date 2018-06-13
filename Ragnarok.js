@@ -118,10 +118,10 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
 
-      let reglas = args.slice(1).join(' ');
+      let reglas = args.join(" ");
    
    
-      if (args.slice < 1) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+       if (!reglas) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
@@ -129,7 +129,7 @@ if (command === 'pvp') {
                             '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
                             '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
        
-      if (!reglas) return message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
+      message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
                             '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
