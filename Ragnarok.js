@@ -240,6 +240,6 @@ const collector = message.channel.createMessageCollector(m => m.author.id === me
         collector.on('end', collected => {
           if(collected.size < 1) return message.channel.send('Abortando la acción...');
         });
-
+        });
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
