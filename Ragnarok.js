@@ -117,30 +117,25 @@ if (command === 'hola') {
        
       } else
 if (command === 'pvp') {
-
-       let reglas = args.join(" ");
-   
-       if (!reglas) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
-                            '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
-                            '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
-                            '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
-                            '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
-                            '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
-                            '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
-       
-      message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
-                            '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
-                            '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
-                            '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
-                            '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
-                            '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.\n'+
-                            '  6.- El uso de las habilidades "Shadow Tag" y "Arena Trap" esta prohibido en las Rankeds.\n'+
-                            '  7.- Solo puedes usar 1 de tus cuentas para PvP competitivo cada temporada. Usar cualquier cuenta que no sea tuya legítimamente, o usar mas de una cuenta resultara en un severo castigo.\n'+
-                            '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
-                            '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que deberia. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
-                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
-
-      } else
+       if (args.length !== 2) {
+           return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+               '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+
+               '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
+               '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
+               '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
+               '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
+               '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n');
+       } else if(args[1] === 'reglas') {
+           message.channel.send(':scroll:  **PvP - REGLAS**\n\n'+
+               '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+
+               '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
+               '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
+               '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
+               '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.');
+       } else if(args[1] === 'pokeban') {
+           message.channel.send(':scroll:  **PvP - Pokeban');
+       }
+} else
 if (command === 'error') {
 
 message.reply('nel prro')
