@@ -118,17 +118,17 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
 
-       message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+       let reglas = args.join(" ");
+   
+       if (!reglas) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
                             '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
                             '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
                             '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
-}
-
-       if (msg.includes('reglas')) {
-                message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
+       
+      message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
                             '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
@@ -140,7 +140,6 @@ if (command === 'pvp') {
                             '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que deberia. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
 
-       
       } else
 if (command === 'error') {
 
@@ -227,7 +226,11 @@ if (msg.startsWith(prefix +"darkrai" )){
     .addField("Campo en línea 3", "Puede tener un máximo de 25 campos.", true);
     
     message.channel.send({embed});
-    } 
+    } else 
+       if (command === 'pvp') {
+   if (args[0] === "hola") return message.channel.send('Hola!')
+else if (args[0] === "adiós") return message.channel.send('Hasta pronto!')
+     }
 });
 
 // THIS MUST BE THIS WAY
