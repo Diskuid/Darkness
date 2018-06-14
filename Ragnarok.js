@@ -118,13 +118,13 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
        if (args.length !== 1) {
-           return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
-               '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+
-               '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
-               '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
-               '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
-               '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
-               '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n');
+           return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+                            '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
+                            '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
+                            '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
+                            '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
+                            '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
        } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
