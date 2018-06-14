@@ -118,7 +118,7 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
 
-      let reglas = args.join("reglas");
+      let reglas = args.slice(1).join("reglas");
    
    
        if (!reglas) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
