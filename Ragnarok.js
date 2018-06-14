@@ -125,8 +125,10 @@ if (command === 'pvp') {
                             '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
                             '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
                             '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
-   
-       if (msg.includes(('reglas')) return message.reply(':scroll:  **PvP - REGLAS**\n```diff\n'+
+}
+
+       if (msg.includes('reglas')) {
+                message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
                             '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
