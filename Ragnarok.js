@@ -226,8 +226,8 @@ if (msg.startsWith(prefix +"darkrai" )){
     .addField("Campo en línea 3", "Puede tener un máximo de 25 campos.", true);
     
     message.channel.send({embed});
-        });
-   
-   
+    } 
+});
+
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
