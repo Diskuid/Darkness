@@ -118,8 +118,7 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
 
-      let reglas = args.slice(1).join("reglas");
-   
+       let reglas = args.join(" ");
    
        if (!reglas) return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
@@ -227,8 +226,20 @@ if (msg.startsWith(prefix +"darkrai" )){
     .addField("Campo en línea 3", "Puede tener un máximo de 25 campos.", true);
     
     message.channel.send({embed});
-    } 
-});
+  } else
+const collector = message.channel.createMessageCollector(m => m.author.id === message.author.id && m.channel.id === message.channel.id, {time : 30000});
+  collector.on('collect', collected => { 
+          if (collected.content.toLowerCase() === 'no') {
+          collector.stop();
+            message.channel.send('Has respondido con `no`');
+          } else if (collected.content.toLowerCase() === 'si') {
+          collector.stop();
+          message.channel.send('Has respondido con `si`');
+          }
+        })
+        collector.on('end', collected => {
+          if(collected.size < 1) return message.channel.send('Abortando la acción...');
+        });
 
 // THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
