@@ -117,7 +117,7 @@ if (command === 'hola') {
        
       } else
 if (command === 'pvp') {
-       if (args.length !== 2) {
+       if (args.length !== 1) {
            return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+
                '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
@@ -125,14 +125,14 @@ if (command === 'pvp') {
                '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
                '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
                '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n');
-       } else if(args[1] === 'reglas') {
+       } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n\n'+
                '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+
                '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
                '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
                '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
                '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.');
-       } else if(args[1] === 'pokeban') {
+       } else if(args[0] === 'pokeban') {
            message.channel.send(':scroll:  **PvP - Pokeban');
        }
 } else
