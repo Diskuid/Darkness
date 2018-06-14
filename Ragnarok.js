@@ -91,7 +91,7 @@ if (msg.startsWith(prefix + "yin")) {
   if (msg.startsWith(prefix + 'help')){
       const embed = new Discord.RichEmbed()
       .setTitle("**Revisa tus mensajes privados.**")
-      .setAuthor(message.author.username, message.author.avatarURL)
+      .setAuthor('Información')
       .setColor(0xd53939)
       .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
