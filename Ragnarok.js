@@ -227,7 +227,7 @@ if (msg.startsWith(prefix +"darkrai" )){
     
     message.channel.send({embed});
     } else 
-       if (command === 'pvp') {
+       if (command === 'saying') {
    if (args[0] === "hola") return message.channel.send('Hola!')
 else if (args[0] === "adiós") return message.channel.send('Hasta pronto!')
      }
