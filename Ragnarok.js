@@ -138,7 +138,29 @@ if (command === 'pvp') {
                             '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que deberia. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
-           message.channel.send(':scroll:  **PvP - Pokeban');
+           message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
+                           '```diff\n'+
+                           '- Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
+                            '  • Arceus\n'+
+                            '  • Blaziken\n'+
+                            '  • Darkrai\n'+
+                            '  • Deoxys\n'+
+                            '  • Dialga\n'+
+                            '  • Genesect\n'+
+                            '  • Giratina\n'+
+                            '  • Groudon\n'+
+                            '  • Ho-Oh\n'+
+                            '  • Kyogre\n'+
+                            '  • Kyurem\n'+
+                            '  • Lugia\n'+
+                            '  • Mewtwo\n'+
+                            '  • Palkia\n'+
+                            '  • Rayquaza\n'+
+                            '  • Reshiram\n'+
+                            '  • Xerneas\n'+
+                            '  • Yveltal\n'+
+                            '  • Zekrom\n\n'+
+                           '// Ademas de cualquier tipo de Mega evolucion.\n' );
        }
 } else
 if (command === 'error') {
