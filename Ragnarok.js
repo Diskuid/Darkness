@@ -139,8 +139,8 @@ if (command === 'pvp') {
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
-                           '```diff\n'+
-                           '- Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
+                            '```diff\n'+
+                            '- Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
                             '  • Arceus\n'+
                             '  • Blaziken\n'+
                             '  • Darkrai\n'+
@@ -160,7 +160,7 @@ if (command === 'pvp') {
                             '  • Xerneas\n'+
                             '  • Yveltal\n'+
                             '  • Zekrom\n\n'+
-                           '// Ademas de cualquier tipo de Mega evolucion.\n' );
+                           '// Ademas de cualquier tipo de Mega evolucion.```');
        }
 } else
 if (command === 'error') {
