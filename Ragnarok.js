@@ -118,7 +118,7 @@ if (command === 'hola') {
       } else
 if (command === 'pvp') {
        if (args.length !== 1) {
-           return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```\nEsta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
+           return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```cs\n# Esta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
@@ -139,8 +139,8 @@ if (command === 'pvp') {
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
-                            '```diff\n'+
-                            '- Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
+                            '```cs\n'+
+                            '# Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
                             '  • Arceus\n'+
                             '  • Blaziken\n'+
                             '  • Darkrai\n'+
