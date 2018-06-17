@@ -32,7 +32,7 @@ if(palabras.some(palabras => message.content.includes(palabras))){
         }
     if (msg.includes('alv')) {
             message.delete();
-            message.reply('Por favor no uses malas palabras. \:Smash:433720028358115349\:');
+            message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>');
     }
     // Purge
     if (command === 'purge' ) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
