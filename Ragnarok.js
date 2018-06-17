@@ -78,7 +78,7 @@ if(command === 'kick' ){
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
 
 }
-   if(message.content === "ayy") {
+   if(message.content === "emoji") {
    const ayy = client.emojis.find("name", "Smash");
    message.reply(`${ayy} LMAO`);
 }
