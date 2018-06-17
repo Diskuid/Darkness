@@ -19,7 +19,7 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   const palabras = ["hack", "troll", "friki", "otaku"];
+   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pinche"];
 
    
    if(palabras.some(palabras => message.content.includes(palabras))){
