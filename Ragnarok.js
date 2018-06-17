@@ -235,22 +235,7 @@ if (command === "darkrai" ){
     .addField("Campo en línea 3", "Puede tener un máximo de 25 campos.", true);
     
     message.channel.send({embed});
-  } else
-     if (command === 'join') { 
-    let Canalvoz = message.member.voiceChannel;
-    if (!Canalvoz || Canalvoz.type !== 'voice') {
-    message.channel.send('¡Necesitas unirte a un canal de voz primero!.').catch(error => message.channel.send(error));
-    } else if (message.guild.voiceConnection) {
-    message.channel.send('Ya estoy conectado en un canal de voz.');
-    } else {
-     message.channel.send('Conectando...').then(m => {
-          Canalvoz.join().then(() => {
-               m.edit(':white_check_mark: | Conectado exitosamente.').catch(error => message.channel.send(error));
-         }).catch(error => message.channel.send(error));
-     }).catch(error => message.channel.send(error));
-    }
-} 
-     
+  } else  
   if (command === "blog" ){
     const embed = new Discord.RichEmbed() 
     .setTitle("Ragnarök Guild - Blog")
