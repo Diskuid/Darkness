@@ -22,7 +22,7 @@ client.on("message", (message) => {
     let razon = args.slice(1).join(' ');
    const palabras = ["hack", "troll", "friki", "otaku"];
 
-if(palabras.some(p => msg.content.includes(p))){
+if(palabras.some(palabras => message.content.includes(palabras))){
 
  //Si detecta la palabra de la matriz envie un mensaje.
   message.channel.send("¡Oh, no se permiten ese tipo de palabras!!");
