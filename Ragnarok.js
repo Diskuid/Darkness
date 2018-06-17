@@ -36,7 +36,7 @@ if(palabras.some(palabras => message.content.includes(palabras))){
             message.reply('Por favor no uses malas palabras. \:Smash:433720028358115349\:');
     }
     // Purge
-    if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
+    if (command === 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
         async function purge() {
 // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
@@ -79,7 +79,7 @@ if(command === 'kick' ){
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
 
 }
-if (msg.startsWith(prefix + "yin")) {
+if (command === "yin")) {
     message.channel.send("yang!");
   }
    if (command === 'ping') {
