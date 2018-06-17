@@ -20,7 +20,13 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   
+   const palabras = ["hack", "troll", "friki", "otaku"];
+
+if(palabras.some(p => message.content.includes(p))){
+
+ //Si detecta la palabra de la matriz envie un mensaje.
+  message.channel.send("¡Oh, no se permiten ese tipo de palabras!!");
+}
       
     if (sender.id === '435965480826568704') {
             return;
