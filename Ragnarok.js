@@ -22,7 +22,7 @@ client.on("message", (message) => {
    const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pinche"];
    
    
-   if(palabras.some(p => message.content.includes(p))){
+   if(palabras.some(p => msg.includes(p))){
 
         message.delete();
         message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>')
