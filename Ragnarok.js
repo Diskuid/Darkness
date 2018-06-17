@@ -24,8 +24,12 @@ client.on("message", (message) => {
    
    if(palabras.some(palabras => message.content.includes(palabras))){
 
-            message.delete();
-            message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>');
+        message.delete();
+        message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>')
+        .then(msg => {
+    msg.delete(3000)
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 }
     // Purge
     if (command === 'purge' ) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
