@@ -21,16 +21,8 @@ client.on("message", (message) => {
     let razon = args.slice(1).join(' ');
    const palabras = ["hack", "troll", "friki", "otaku"];
 
-if(palabras.some(palabras => message.content.includes(palabras))){
-
- //Si detecta la palabra de la matriz envie un mensaje.
-  message.channel.send("¡Oh, no se permiten ese tipo de palabras!!");
-}
-      
-    if (sender.id === '435965480826568704') {
-            return;
-        }
-    if (msg.includes('alv')) {
+   
+    if (msg.includes(palabras)) {
             message.delete();
             message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>');
     }
