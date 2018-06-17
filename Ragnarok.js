@@ -22,10 +22,11 @@ client.on("message", (message) => {
    const palabras = ["hack", "troll", "friki", "otaku"];
 
    
-    if (msg.includes(palabras)) {
+   if(palabras.some(palabras => message.content.includes(palabras))){
+
             message.delete();
             message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>');
-    }
+}
     // Purge
     if (command === 'purge' ) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
