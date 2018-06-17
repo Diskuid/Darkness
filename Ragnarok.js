@@ -20,9 +20,9 @@ client.on("message", (message) => {
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
    const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pinche"];
-    var blacklist = palabras.content.toLowerCase();
    
-   if(palabras.some(palabras => message.content.includes(blacklist))){
+   
+   if(palabras.some(p => message.content.includes(p))){
 
         message.delete();
         message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>')
