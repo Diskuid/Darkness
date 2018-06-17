@@ -19,10 +19,9 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pinche"];
 
    
-    if (msg.includes(palabras)) {
+    if (msg.includes("alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pinche")) {
         message.delete();
         message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>')
         .then(msg => {
