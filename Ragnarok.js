@@ -78,6 +78,10 @@ if(command === 'kick' ){
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
 
 }
+   if(message.content === "ayy") {
+   const ayy = client.emojis.find("name", "Smash");
+   message.reply(`${ayy} LMAO`);
+}
 if (command === 'yin' ) {
     message.channel.send("yang!");
   }
