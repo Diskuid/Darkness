@@ -9,7 +9,6 @@ client.on('ready', () => {
 var prefix = config.prefix;
 
 client.on("message", (message) => {
-  if (!message.content.startsWith(config.prefix)) return;
   if (message.author.bot) return;
    
     var msg = message.content.toLowerCase();
@@ -94,7 +93,7 @@ if (command === 'yin' ) {
       });
     
   }else
-  if (msg.startsWith(prefix + 'help')){
+  if (command === 'help'){
       const embed = new Discord.RichEmbed()
       .setAuthor('Información')
       .setDescription("Revisa tus mensajes privados.")
@@ -195,7 +194,7 @@ if (command === 'alola') {
         
         message.channel.send({embed});
         } else       
-if (msg.startsWith(prefix +"jirachi" )){
+if (command === "jirachi" ){
   const embed = new Discord.RichEmbed() 
   .setColor(0xd53939)
   .setFooter("Ragnarök Guild", client.user.avatarURL)
@@ -206,7 +205,7 @@ if (msg.startsWith(prefix +"jirachi" )){
   
   message.channel.send({embed});
 } else
-if (msg.startsWith(prefix +"darkrai" )){
+if (command === "darkrai" ){
   const embed = new Discord.RichEmbed() 
   .setColor(0x000000)
   .setFooter("Ragnarök Guild", client.user.avatarURL)
@@ -217,7 +216,7 @@ if (msg.startsWith(prefix +"darkrai" )){
   
   message.channel.send({embed});
 } else
-  if (msg.startsWith(prefix +"test" )){
+  if (command === "test" ){
     const embed = new Discord.RichEmbed() 
     .setTitle("Este es su título, puede contener 256 caracteres")
     .setAuthor(message.author.username, message.author.avatarURL)
@@ -236,7 +235,7 @@ if (msg.startsWith(prefix +"darkrai" )){
     
     message.channel.send({embed});
   } else
-  if (msg.startsWith(prefix +"blog" )){
+  if (command === "blog" ){
     const embed = new Discord.RichEmbed() 
     .setTitle("Ragnarök Guild - Blog")
     .setAuthor(message.author.username, message.author.avatarURL)
