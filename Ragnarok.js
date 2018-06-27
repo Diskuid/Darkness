@@ -113,7 +113,7 @@ if (command === 'yin' ) {
                             '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
         
        } else
-if (command === 'hola') {
+if (msg.startsWith(prefix + 'hola')) {
        message.delete();
 
        if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
