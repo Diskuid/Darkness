@@ -32,7 +32,7 @@ client.on("message", (message) => {
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 } 
     // Purge
-    if (command === 'purge' ) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
+if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
         async function purge() {
 // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
@@ -65,7 +65,7 @@ client.on("message", (message) => {
         purge(); // Make sure this is inside the if(msg.startsWith)
 
     }
-if(command === 'kick' ){
+if (msg.startsWith(prefix + 'kick' )){
     if (!message.member.roles.find("name", "Lider")) return message.reply('No tienes permisos para usar este comando.'); // This checks to see if they DONT have it, the "!" inverts the true/false
     if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
     if (!razon) return message.channel.send('Escribe una razón, `.kick @username [razón]`');
@@ -75,14 +75,14 @@ if(command === 'kick' ){
     message.channel.send(`**${user.username}**, fue pateado del servidor, razón: ${razon}.`);
 
 }
-   if(message.content === "emoji") {
+if (msg.startsWith(prefix + "emoji")) {
    const ayy = client.emojis.find("name", "Smash");
    message.reply(`${ayy} LMAO`);
 }
-if (command === 'yin' ) {
+if (msg.startsWith(prefix + 'yin' )) {
     message.channel.send("yang!");
   }
-   if (command === (prefix + 'ping')) {
+if (msg.startsWith(prefix + 'ping')) {
 
     let ping = Math.floor(message.client.ping);
     
@@ -94,7 +94,7 @@ if (command === 'yin' ) {
       });
     
   }else
-  if (command === 'help'){
+if (msg.startsWith(prefix + 'help')){
       const embed = new Discord.RichEmbed()
       .setAuthor('Información')
       .setDescription("Revisa tus mensajes privados.")
@@ -169,7 +169,7 @@ if (command === 'pvp') {
                            '// Ademas de cualquier tipo de Mega evolucion.```');
        }
 } else
-if (command === 'error') {
+if (msg.startsWith(prefix + 'error')) {
 
 message.reply('nel prro')
   .then(msg => {
@@ -178,7 +178,7 @@ message.reply('nel prro')
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 
       } else
-if (command === 'alola') {
+if (msg.startsWith(prefix + 'alola')) {
        message.delete();
 
        if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
@@ -195,7 +195,7 @@ if (command === 'alola') {
         
         message.channel.send({embed});
         } else       
-if (command === "jirachi" ){
+if (msg.startsWith(prefix + "jirachi" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0xd53939)
   .setFooter("Ragnarök Guild", client.user.avatarURL)
@@ -206,7 +206,7 @@ if (command === "jirachi" ){
   
   message.channel.send({embed});
 } else
-if (command === "darkrai" ){
+if (msg.startsWith(prefix + "darkrai" )){
   const embed = new Discord.RichEmbed() 
   .setColor(0x000000)
   .setFooter("Ragnarök Guild", client.user.avatarURL)
@@ -217,7 +217,7 @@ if (command === "darkrai" ){
   
   message.channel.send({embed});
 } else
-  if (command === "test" ){
+if (msg.startsWith(prefix + "test" )){
     const embed = new Discord.RichEmbed() 
     .setTitle("Este es su título, puede contener 256 caracteres")
     .setAuthor(message.author.username, message.author.avatarURL)
@@ -236,7 +236,7 @@ if (command === "darkrai" ){
     
     message.channel.send({embed});
   } else  
-  if (command === "blog" ){
+if (msg.startsWith(prefix + "blog" )){
     const embed = new Discord.RichEmbed() 
     .setTitle("Ragnarök Guild - Blog")
     .setAuthor(message.author.username, message.author.avatarURL)
@@ -255,7 +255,7 @@ if (command === "darkrai" ){
     
     message.channel.send({embed});
     } else 
-       if (command === 'saying') {
+if (msg.startsWith(prefix + 'saying')) {
    if (args[0] === "hola") return message.channel.send('Hola!')
 else if (args[0] === "adiós") return message.channel.send('Hasta pronto!')
      }
