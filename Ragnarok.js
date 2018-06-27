@@ -122,7 +122,7 @@ if (msg.startsWith(prefix + 'hola')) {
             message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2JwW1q8');
        
       } else
-if (msg.startsWith(prefix +'pvp')) {
+if (msg.startsWith(prefix + 'pvp')) {
        if (args.length !== 1) {
            return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```cs\n# Esta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
@@ -255,7 +255,7 @@ if (msg.startsWith(prefix + "blog" )){
     
     message.channel.send({embed});
     } else 
-if (msg.startsWith(prefix + 'saying')) {
+if (command === 'saying') {
    if (args[0] === "hola") return message.channel.send('Hola!')
 else if (args[0] === "adiós") return message.channel.send('Hasta pronto!')
      }
