@@ -19,13 +19,13 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pito", "coño", "anal", "panocha", "teta", "polla", "mecos", "culo", "poto", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "wn", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche"];
+   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "mames", "pinchi", "pito", "coño", "anal", "panocha", "teta", "polla", "mecos", "culo", "poto", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "wn", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche", "nalga"];
    
    
    if(palabras.some(p => msg.includes(p))){
 
         message.delete();
-        message.reply('Por favor no uses malas palabras. <:Smash:433720028358115349>')
+        message.reply('por favor no uses malas palabras. <:Smash:433720028358115349>')
         .then(msg => {
     msg.delete(3000)
   })
