@@ -13,7 +13,7 @@ client.on("message", (message) => {
    
     var msg = message.content.toLowerCase();
     let cont = message.content.slice(prefix.length).split(" ");
-    const args = message.content.slice(prefix.length).trim().split(/ +/g).toLowerCase();
+    const args = message.content.toLowerCase().slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     let sender = message.author;   
     let texto = args.join(" ");
