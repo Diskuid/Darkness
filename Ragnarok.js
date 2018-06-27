@@ -82,7 +82,7 @@ if(command === 'kick' ){
 if (command === 'yin' ) {
     message.channel.send("yang!");
   }
-   if (command === prefix + 'help') {
+   if (command === prefix + 'ping') {
 
     let ping = Math.floor(message.client.ping);
     
