@@ -122,7 +122,7 @@ if (msg.startsWith(prefix + 'hola')) {
             message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2JwW1q8');
        
       } else
-if (command === 'pvp') {
+if (msg.startsWith(prefix +'pvp')) {
        if (args.length !== 1) {
            return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```cs\n# Esta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
