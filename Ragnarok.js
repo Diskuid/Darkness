@@ -103,7 +103,7 @@ if (msg.startsWith(prefix + 'help')){
       .setTimestamp()
       message.channel.send({embed});
         message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
-                            '```css\n'+
+                            '```cs\n'+
                             '# Player vs. Player\n'+
                             '  '+prefix+'PvP Reglas        »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan       »   Muestra los Pokémon baneados del PvP.\n'+
