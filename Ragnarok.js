@@ -102,15 +102,31 @@ if (msg.startsWith(prefix + 'help')){
       .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
       message.channel.send({embed});
-        message.author.send('```\n** Ragnarök bot - Comandos **\n\n'+
-                            'PVP\n'+
-                            '-> '+prefix+'pvp            :: Muestra los comandos que hay relacionados al PvP.\n'+  
-                            '-> '+prefix+'pvp pokeban    :: Muestra los pokemon baneados en PvP.\n'+
-                            '-> '+prefix+'pvp reglas     :: Muestra las reglas del PvP.\n'+
-                            '-> '+prefix+'pvp report     :: Te da el link directo del foro para reportar.\n\n'+
+        message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
+                            '```css\n'+
+                            '# Player vs. Player\n'+
+                            '  '+prefix+'PvP Reglas        »   Muestra las reglas actuales del PvP.\n'+  
+                            '  '+prefix+'PvP PokeBan       »   Muestra los Pokémon baneados del PvP.\n'+
+                            '  '+prefix+'PvP MoveBan       »   Muestra los movimientos y habilidades baneados del PvP.\n'+
+                            '  '+prefix+'PvP Coins         »   Muestra que son y para que sirven las PvP Coins.\n'+
+                            '  '+prefix+'PvP Temporadas    »   Muestra información acerca de las temporadas de PvP.\n\n'+
+                            '# Informacion\n'+
+                            '  '+prefix+'Reglas            »   Muestra las reglas del juego, el incumplimiento de estas puede resultar en ban.\n'+  
+                            '  '+prefix+'Dig <Region>      »   Muestra información acerca de los spots para hacer dig en determinada región.\n'+
+                            '  '+prefix+'Evs <Region>      »   Muestra información acerca de los spots de Evs en determinada región.\n\n'+
+                            '# Reportes\n'+
+                            '  '+prefix+'Report            »   Muestra información acerca de como reportar.\n'+  
+                            '  '+prefix+'Report Trade      »   Muestra información acerca de como reportar una infracción relacionada con los intercambios.\n'+
+                            '  '+prefix+'Report PvP        »   Muestra información acerca de como reportar una infracción relacionada con el PvP.\n'+
+                            '  '+prefix+'Report chat       »   Muestra información acerca de como reportar una infracción relacionada con los Chat globales.\n'+
+                            '  '+prefix+'Report Bug        »   Muestra información acerca de como reportar cualquier tipo de bug.\n\n'+
+                            '# Baneos\n'+
+                            '  '+prefix+'Ban               »   Muestra información acerca de los baneos en PRO.\n'+  
+                            '  '+prefix+'Ban Dashboard     »   Link e información acerca del Dashboard para saber las razones de tu baneo.\n'+
+                            '  '+prefix+'Ban Apelacion     »   Link e información acerca de como apelar tu baneo.\n\n'+
                             'Otros\n'+
-                            '-> '+prefix+'hola           :: Retorna un saludo como mensaje.\n'+
-                            '-> '+prefix+'alola          :: Retorna un saludo como mensaje.\n```');
+                            '  '+prefix+'Hola <Etiqueta>   »   Envía saludos a una persona especifica.\n'+
+                            '  '+prefix+'Alola <Etiqueta>  »   Envía saludos a una persona especifica.\n```');
         
        } else
 if (msg.startsWith(prefix + 'hola')) {
