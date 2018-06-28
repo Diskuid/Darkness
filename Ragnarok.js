@@ -124,7 +124,7 @@ if (msg.startsWith(prefix + 'help')){
                             '  '+prefix+'Ban               »   Muestra información acerca de los baneos en PRO.\n'+  
                             '  '+prefix+'Ban Dashboard     »   Link e información acerca del Dashboard para saber las razones de tu baneo.\n'+
                             '  '+prefix+'Ban Apelacion     »   Link e información acerca de como apelar tu baneo.\n\n'+
-                            'Otros\n'+
+                            '# Otros\n'+
                             '  '+prefix+'Hola <Etiqueta>   »   Envía saludos a una persona especifica.\n'+
                             '  '+prefix+'Alola <Etiqueta>  »   Envía saludos a una persona especifica.\n```');
         
