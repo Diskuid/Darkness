@@ -104,7 +104,7 @@ if (msg.startsWith(prefix + 'help')){
       message.channel.send({embed});
         message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
                             '```cs\n'+
-                            '# Player vs. Player\n'+
+                            '# PvP\n'+
                             '  '+prefix+'PvP Reglas        »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan       »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan       »   Muestra los movimientos y habilidades baneados del PvP.\n'+
@@ -149,16 +149,17 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
        } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
-                            '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP estan prohibidos.\n'+  
+                            '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP están prohibidos.\n'+  
                             '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
-                            '  3.- La retención de tiempo esta prohibida. (Atacar hasta el ultimo segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
+                            '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
                             '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
                             '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.\n'+
                             '  6.- El uso de las habilidades "Shadow Tag" y "Arena Trap" esta prohibido en las Rankeds.\n'+
                             '  7.- Solo puedes usar 1 de tus cuentas para PvP competitivo cada temporada. Usar cualquier cuenta que no sea tuya legítimamente, o usar mas de una cuenta resultara en un severo castigo.\n'+
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
-                            '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que deberia. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
-                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                            '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que debería. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
+                            '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
+                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
                             '```cs\n'+
