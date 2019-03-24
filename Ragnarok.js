@@ -104,10 +104,11 @@ if (msg.startsWith(prefix + 'help')){
       message.channel.send({embed});
         message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
                             '```cs\n'+
-                            '# PvP\n'+
+                            '# PvP Rankeds\n'+
                             '  '+prefix+'PvP Reglas        »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan       »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan       »   Muestra los movimientos y habilidades baneados del PvP.\n'+
+                            '  '+prefix+'PvP Clausulas     »   Muestra las cláusulas vigentes en el PvP.\n'+
                             '  '+prefix+'PvP Coins         »   Muestra que son y para que sirven las PvP Coins.\n'+
                             '  '+prefix+'PvP Temporadas    »   Muestra información acerca de las temporadas de PvP.\n\n'+
                             '# Informacion\n'+
@@ -144,21 +145,31 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP Clausulas   »   Muestra las cláusulas vigentes en el PvP.\n'+
                             '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
                             '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
                             '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
        } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
-                            '  1.- El uso de movimientos, habilidades o ítems buggeados o aun no codificados que puedan ser abusados en PvP están prohibidos.\n'+  
-                            '  2.- Todos los Pokémon con mas de 601 en stats base están baneados del competitivo. Otros Pokémon tier Uber (Específicamente Blaziken) están de igual manera baneados. (Puedes revisar la lista completa con el comando ".PvP PokeBan")\n'+
+                            '  1.- El uso de movimientos, habilidades e items que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
+                            '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
                             '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
                             '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.\n'+
                             '  6.- El uso de las habilidades "Shadow Tag" y "Arena Trap" esta prohibido en las Rankeds.\n'+
-                            '  7.- Solo puedes usar 1 de tus cuentas para PvP competitivo cada temporada. Usar cualquier cuenta que no sea tuya legítimamente, o usar mas de una cuenta resultara en un severo castigo.\n'+
+                            '  7.- 7. Puedes usar solo 1 de tus propias cuentas para PvP dentro de cada temporada. El uso de cualquier cuenta que no posea legítimamente, o el uso de más de 1 cuenta , resultará en un duro castigo. (Esta regla se modificó temporalmente para probar las cuentas alternativas en la escala de clasificación, sin embargo, no puede tener más de una cuenta en el Top 25 al final de la temporada.)\n'+
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
                             '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que debería. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
+                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+       } else if(args[0] === 'clausulas') {
+           message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n```diff\n'+
+                            '  • Cláusula "OHKO"       -   Movimientos OHKO (Fissure, Guillotine, Horn Drill, and Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
+                            '  • Cláusula "Species"    -   Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
+                            '  • Cláusula del sueño    -   Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
+                            '  • Cláusula "Baton Pass  -   Un Pokémon no puede pasar +Velocidad y otra estadística simultáneamente. (Limitado a un solo Pokémon con Baton Pass por equipo.)"\n'+
+                            '  • Cláusula de Evasión   -   Un Pokémon no puede tener movimientos que incrementen o disminuyan la evasión o la precisión en su moveset. El uso de este tipo de movimientos está prohibidos.\n'+
+                            '  • Cláusula "Swagger"    -   El uso del movimiento "Swagger" está prohibido.\n\n'+
                                 '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
