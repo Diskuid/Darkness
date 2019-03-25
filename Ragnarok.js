@@ -145,6 +145,8 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
                             '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
                             '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP ItemBan     »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP AbilityBan     »   Muestra los movimientos baneados del PvP.\n'+
                             '  '+prefix+'PvP Clausulas   »   Muestra las cláusulas vigentes en el PvP.\n'+
                             '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
                             '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
