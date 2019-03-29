@@ -176,7 +176,7 @@ if (msg.startsWith(prefix + 'pvp')) {
        } else if(args[0] === 'pokeban') {
            message.channel.send(':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n'+
 
-'`▸ Pókemon prohibidos en PvP.`\n'+
+'`▸ Pokémon prohibidos en PvP.`\n'+
 '```md\n'+
 '  • Arceus\n'+
 '  • Blaziken\n'+
