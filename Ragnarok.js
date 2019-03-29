@@ -232,7 +232,7 @@ if (msg.startsWith(prefix + 'pvp')) {
 '  • Stockpile [Puede ser usado más de 3 veces]\n\n'+
 
 '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
-'```');
+'```')
            message.channel.send('`▸ Movimientos aún no codificados NO BANEABLES en PvP`\n'+
 '```md\n'+
 'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King's Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
