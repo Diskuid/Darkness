@@ -19,7 +19,7 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "pinchi", "pito", "coño", "anal", "panocha", "teta", "polla", "mecos", "culo", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "wn", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche", "nalga"];
+   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "pinchi", "pito", "coño", "anal", "panocha", "teta", "polla", "mecos", "culo", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche", "nalga"];
    
    
    if(palabras.some(p => msg.includes(p))){
