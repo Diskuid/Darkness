@@ -333,7 +333,7 @@ if (msg.startsWith(prefix + "blog" )){
     } else 
 if (command === 'saying') {
    if (args[0] === "hola") return message.channel.send('Hola!')
-else if (args[0] === "adiós") return message.channel.send('Hasta pronto!')
+else if (args[0] === "adios") return message.channel.send('Hasta pronto!')
      }
 });
 
