@@ -174,29 +174,32 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  • Cláusula "Swagger": El uso del movimiento "Swagger" está prohibido.\n\n'+
                                 '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
-           message.channel.send(':closed_book:  **PvP - POKÉMON BANEADOS**\n'+
-                            '```cs\n'+
-                            '# Estos son los Pókemon que esta prohibido usar en el PvP.\n\n'+
-                            '  • Arceus\n'+
-                            '  • Blaziken\n'+
-                            '  • Darkrai\n'+
-                            '  • Deoxys\n'+
-                            '  • Dialga\n'+
-                            '  • Genesect\n'+
-                            '  • Giratina\n'+
-                            '  • Groudon\n'+
-                            '  • Ho-Oh\n'+
-                            '  • Kyogre\n'+
-                            '  • Kyurem\n'+
-                            '  • Lugia\n'+
-                            '  • Mewtwo\n'+
-                            '  • Palkia\n'+
-                            '  • Rayquaza\n'+
-                            '  • Reshiram\n'+
-                            '  • Xerneas\n'+
-                            '  • Yveltal\n'+
-                            '  • Zekrom\n\n'+
-                           '// Ademas de cualquier tipo de Mega evolucion.```');
+           message.channel.send(':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n'+
+
+'▸ Pókemon prohibidos en PvP.`\n'+
+'```md\n'+
+' • Arceus\n'+
+' • Blaziken\n'+
+'  • Darkrai\n'+
+'  • Deoxys\n'+
+'  • Dialga\n'+
+'  • Genesect\n'+
+'  • Giratina\n'+
+'  • Groudon\n'+
+'  • Ho-Oh\n'+
+'  • Kyogre\n'+
+'  • Kyurem\n'+
+'  • Lugia\n'+
+'  • Mewtwo\n'+
+'  • Palkia\n'+
+'  • Rayquaza\n'+
+'  • Reshiram\n'+
+'  • Xerneas\n'+
+'  • Yveltal\n'+
+'  • Zekrom\n\n'+
+
+'> Además de cualquier tipo de Mega-evolución.\n'+
+'```');
                  } else if(args[0] === 'moveban') {
            message.channel.send(':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n\n'+
 '`▸ Movimientos bugeados BANEABLES en PvP`\n'+
