@@ -205,11 +205,11 @@ if (msg.startsWith(prefix + 'pvp')) {
 '`▸ Movimientos bugeados BANEABLES en PvP`\n'+
 '```md\n'+
 '  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
-'  • Endure [Funciona cada vez que es usado. \n'+
+'  • Endure [Funciona cada vez que es usado]\n'+
 '  • Last Resort [Su restricción no funciona correctamente]\n'+
 '  • Memento + Focus Sash [Pokémon que tengan equipado Focus Sash no mueren al usar Memento]\n'+
 '  • Sleep Talk whilst awake [No consume PP, si ves a un oponente sin usar un movimiento mientras está despierto, es esto]\n'+
-'    - Si te quedaste sin PP en tus otros movimientos y forzosamente tienes que usar Sleep Talk mientras estás despierto, por favor toma screenshots.\n\n'+
+'    - Si te quedaste sin PP en tus otros movimientos y tienes que usar Sleep Talk mientras estás despierto, por favor toma screenshot.\n\n'+
 
 '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
 '```\n'+
