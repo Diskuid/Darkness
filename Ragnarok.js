@@ -197,6 +197,48 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  • Yveltal\n'+
                             '  • Zekrom\n\n'+
                            '// Ademas de cualquier tipo de Mega evolucion.```');
+                 } else if(args[0] === 'moveban') {
+           message.channel.send(':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n'+
+'`▸ Movimientos bugeados BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
+'  • Endure [Funciona cada vez que es usado. \n'+
+'  • Last Resort [Su restricción no funciona correctamente]\n'+
+'  • Memento + Focus Sash [Pokémon que tengan equipado Focus Sash no mueren al usar Memento]\n'+
+'  • Sleep Talk whilst awake [No consume PP, si ves a un oponente sin usar un movimiento mientras está despierto, es esto]\n'+
+'    - Si te quedaste sin PP en tus otros movimientos y forzosamente tienes que usar Sleep Talk mientras estás despierto, por favor toma screenshots.\n\n'+
+
+'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+'```\n'+
+'`▸ Movimientos bugeados NO BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Baton Pass [No pasa SpAtk, y se puede usar aunque tenga equipado un item que fuerce a usar movimientos ofensivos]\n'+
+'  • Chatter [No confunde al objetivo]\n'+
+'  • Detect [Movimientos de dos turnos pueden inflingir efectos secundarios]\n'+
+'  • Explosion [Puede hacer KO a objetivos aún cuando estos tienen Sturdy o Focus Sash]\n'+
+'  • Fake Out [Fake out no funciona cuando es cambiado con un movimiento como volt switch, roar, dragon tail, etc.]\n'+
+'  • Hex [No incrementa el daño si tiene un problema de estado]\n'+
+'  • Smack Down [No tira al Pokémon rival]\n'+
+'  • Trick + Choice Item [Cuando usas Trick en un oponente que posee un item "Choice", puedes seguir usando otros movimientos]\n'+
+'  • Volt-switch [Usable aún cuando el Pokémon rival posee Volt Absorb]\n\n'+
+
+'> El uso de estos movimientos no es reportable.\n'+
+'```\n'+
+'`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Belch [Puede ser usado aún sin comer una baya]\n'+
+'  • Doom Desire [No tiene que cargar]\n'+
+'  • Razor wind [No tiene que cargar]\n'+
+'  • Stockpile [Puede ser usado más de 3 veces]\n\n'+
+
+'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+'```');
+           message.channel.send('`▸ Movimientos aún no codificados NO BANEABLES en PvP`\n'+
+'```md\n'+
+'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King's Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
+
+'> El uso de estos movimientos no es reportable.\n'+
+'```');
        }
 } else
 if (msg.startsWith(prefix + 'error')) {
