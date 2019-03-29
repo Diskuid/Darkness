@@ -243,6 +243,38 @@ if (msg.startsWith(prefix + 'pvp')) {
 
 '> El uso de estos movimientos no es reportable.\n'+
 '```');
+                           } else if(args[0] === 'abiliban') {
+           message.channel.send(':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n'+
+
+'`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Defeatist [No reduce los stats a la mitad]\n'+
+'  • Fly + Gale Wings [Fly tiene prioridad en su primer turno y pierde su prioridad en el segundo]\n'+
+'  • Unburden [El Pokémon mantendra el aumento de velocidad aun si este es cambiado]\n'+
+'  • Wonder Guard + Focus Sash [Shedinja con Focus Sash no morirá con Spikes / Stealth Rock]\n\n'+
+
+'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+'```\n'+
+'`▸ Habilidades bugeadas NO BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Competitive [Sólo funciona con movimientos que bajen estadisticas, no con estados]\n'+
+'  • Simple [Los boosteos no se acumulan correctamente]\n'+
+'  • Synchronize [A veces falla al pasar un estado al Pokémon rival]\n'+
+'  • Trace [No copia la habilidad al cambiar después de un K.O.]\n'+
+'  • Habilidades de clima [El clima del Pokémon más rápido se impondrá en vez de el del Pokémon más lento si son puesto al mismo tiempo]\n\n'+
+
+'> El uso de estas habilidades no es reportable.\n'+
+'```\n'+
+'`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Ninguna\n'+
+'```\n'+
+'`▸ Movimientos aún no codificados NO BANEABLES en PvP`\n'+
+'```md\n'+
+'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
+
+'> El uso de estas habilidades no es reportable.\n'+
+'```');              
        }
 } else
 if (msg.startsWith(prefix + 'error')) {
