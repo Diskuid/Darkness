@@ -148,7 +148,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  '+prefix+'PvP ItemBan      »   Muestra los ítems baneados del PvP.\n'+
                             '  '+prefix+'PvP AbilityBan   »   Muestra las habilidades baneadas del PvP.\n'+
                             '  '+prefix+'PvP Clausulas    »   Muestra las cláusulas vigentes en el PvP.\n'+
-                            '  '+prefix+'PvP FAQ          »   Muestra las preguntas más frecuentes relacionadas a las coins PvP, temporadas y reportes.```');
+                            '  '+prefix+'PvP FAQ          »   Muestra las preguntas más frecuentes relacionadas a las PvP coins, temporadas y reportes.```');
        } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades e items que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
