@@ -162,7 +162,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
                             '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que debería. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
-                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n```');
        } else if(args[0] === 'clausulas') {
            message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n```diff\n'+
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, and Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
