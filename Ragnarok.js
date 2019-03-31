@@ -235,11 +235,31 @@ if (msg.startsWith(prefix + 'pvp')) {
 '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
 '```\n'+
 '`▸ Movimientos aún no codificados NO BANEABLES en PvP`');   
-                    
                    message.channel.send('```md\n'+
 'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King´s Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
 
 '> El uso de estos movimientos no es reportable.\n'+
+'```');
+               } else if(args[0] === 'itemban') {
+           message.channel.send(':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n\n'+
+
+'`▸ Ítems bugeados BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Shell bell [Cura el doble de cantidad de lo que debería]\n\n'+
+
+'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+'```\n'+
+'`▸ Ítems bugeados NO BANEABLES en PvP`\n'+
+'```md\n'+
+'   • Ninguno\n'+
+'```\n'+
+'`▸ Ítems aún no codificados BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Ninguno\n'+
+'```\n'+
+'`▸ Ítems aún no codificados NO BANEABLES en PvP`\n'+
+'```md\n'+
+'  • Ninguno\n'+
 '```');
                            } else if(args[0] === 'abilityban') {
            message.channel.send(':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n'+
