@@ -46,7 +46,7 @@ if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, 
             // We want to check if the argument is a number
             if (isNaN(args[0])) {
                 // Sends a message to the channel.
-                message.channel.send('Por favor usa un numero. \n**Ejemplo:** \`' + prefix + 'purge <numero>\`'); //\n means new line.
+                message.channel.send('Por favor usa un número. \n**Ejemplo:** \`' + prefix + 'purge <numero>\`'); //\n means new line.
                 // Cancels out of the script, so the rest doesn't run.
                 return;
             }
@@ -126,8 +126,8 @@ if (msg.startsWith(prefix + 'help')){
                             '  '+prefix+'Ban Dashboard     »   Link e información acerca del Dashboard para saber las razones de tu baneo.\n'+
                             '  '+prefix+'Ban Apelacion     »   Link e información acerca de como apelar tu baneo.\n\n'+
                             '# Otros\n'+
-                            '  '+prefix+'Hola <Etiqueta>   »   Envía saludos a una persona especifica.\n'+
-                            '  '+prefix+'Alola <Etiqueta>  »   Envía saludos a una persona especifica.\n```');
+                            '  '+prefix+'Hola <Etiqueta>   »   Envía saludos a una persona específica.\n'+
+                            '  '+prefix+'Alola <Etiqueta>  »   Envía saludos a una persona específica.\n```');
         
        } else
 if (msg.startsWith(prefix + 'hola')) {
@@ -136,7 +136,7 @@ if (msg.startsWith(prefix + 'hola')) {
        if (message.mentions.users.size < 1) return message.reply('Debes mencionar a alguien.').catch(console.error);
 
             message.guild.member(user);
-            message.channel.send(sender + ' Te envia un saludo, ' + user + '\n https://gph.is/2JwW1q8');
+            message.channel.send(sender + ' Te envía un saludo, ' + user + '\n https://gph.is/2JwW1q8');
        
       } else
 if (msg.startsWith(prefix + 'pvp')) {
@@ -274,7 +274,64 @@ if (msg.startsWith(prefix + 'pvp')) {
 'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
 
 '> El uso de estas habilidades no es reportable.\n'+
-'```');              
+'```');         
+                              } else if(args[0] === 'faq') {
+           message.channel.send(':page_facing_up:  **PvP - FAQ**\n\n'+
+
+'`-` **__Temporadas__**\n\n'+
+
+'`▸ ¿Qué es una temporada?`\n'+
+'```md\n'+
+'  • Una temporada PvP es un periodo de tiempo en el cual se compite por llegar al puesto #1 ganando puntos cada vez que ganas una batalla clasificatoria.\n'+
+'```\n'+
+'`▸ ¿Cuánto tiempo dura?`\n'+
+'```md\n'+
+'  • Por lo general, una temporada suele durar 30 días, se reinicia los primeros días de cada mes.\n'+
+'```\n'+
+'`▸ ¿Hay premios?`\n'+
+'```md\n'+
+'  • Sí, los mejores jugadores suelen tener recompensas al final de cada temporada, además, se les invita a un torneo exclusivo para ellos.\n'+
+'```\n\n'+
+
+'`-` **__PvP Coins__**\n\n'+
+
+'`▸ ¿Qué son?`\n'+
+'```md\n'+
+'  • Las PvP Coins como su nombre lo dice, son un tipo de moneda dentro del juego.\n'+
+'```\n'+
+'`▸ ¿Cómo se consiguen?`\n'+
+'```md\n'+
+'  • La obtención de este tipo de moneda es exclusivo de las batallas PvP clasificatorias, 1 moneda por victoria.\n'+
+'```\n'+
+'`▸ ¿Para qué sirven?`\n'+
+'```md\n'+
+'  • Este tipo de moneda puede ser intercambiada por objetos exclusivos, los NPCs dedicados a la venta de ítems a cambio de las PvP Coins se encuentran en las principales ciudades y son llamados "PvP Coin Master".\n'+
+'```\n\n'+
+
+'`-` **__Reportes__**\n\n'+
+
+'`▸ ¿Qué es un reporte?`\n'+
+'```md\n'+
+'  • Si dentro de una partida clasificatoria se comete alguna infracción, esta se puede reportar en el foro para que castigue al infractor.\n'+
+'```\n'+
+'`▸ ¿Como se reporta a alguien?`\n'+
+'```md\n'+
+'  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.
+'```\n'+
+'`▸ ¿Los demás pueden ver mi reporte?`
+'```md\n'+
+'  • No, todos los reportes son privados, sólo el staff correspondiente lo puede ver.\n'+
+'```\n'+
+'`▸ Plantilla para reportar a alguien`\n'+
+'```md\n'+
+'**Titulo del reporte explicando cual es la infracción que se reporta**\n\n'+
+
+'Reported player: (Nombre del jugador reportado)\n'+
+'Reason: (Explicación por la que estás reportando al jugador)\n\n'+
+
+'> Debes incluir la evidencia en el reporte (imágenes o video).\n'+
+'> El reporte debe estar preferentemente escrito en inglés.\n'+
+'```');
        }
 } else
 if (msg.startsWith(prefix + 'error')) {
