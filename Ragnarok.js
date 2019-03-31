@@ -173,183 +173,178 @@ if (msg.startsWith(prefix + 'pvp')) {
                                 '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n'+
-
-'`▸ Pokémon prohibidos en PvP.`\n'+
-'```md\n'+
-'  • Arceus\n'+
-'  • Blaziken\n'+
-'  • Darkrai\n'+
-'  • Deoxys\n'+
-'  • Dialga\n'+
-'  • Genesect\n'+
-'  • Giratina\n'+
-'  • Groudon\n'+
-'  • Ho-Oh\n'+
-'  • Kyogre\n'+
-'  • Kyurem\n'+
-'  • Lugia\n'+
-'  • Mewtwo\n'+
-'  • Palkia\n'+
-'  • Rayquaza\n'+
-'  • Reshiram\n'+
-'  • Xerneas\n'+
-'  • Yveltal\n'+
-'  • Zekrom\n\n'+
-
-'> Además de cualquier tipo de Mega-evolución.\n'+
-'```');
-                 } else if(args[0] === 'moveban') {
+                             '`▸ Pokémon prohibidos en PvP.`\n'+
+                             '```md\n'+
+                             '  • Arceus\n'+
+                             '  • Blaziken\n'+
+                             '  • Darkrai\n'+
+                             '  • Deoxys\n'+
+                             '  • Dialga\n'+
+                             '  • Genesect\n'+
+                             '  • Giratina\n'+
+                             '  • Groudon\n'+
+                             '  • Ho-Oh\n'+
+                             '  • Kyogre\n'+
+                             '  • Kyurem\n'+
+                             '  • Lugia\n'+
+                             '  • Mewtwo\n'+
+                             '  • Palkia\n'+
+                             '  • Rayquaza\n'+
+                             '  • Reshiram\n'+
+                             '  • Xerneas\n'+
+                             '  • Yveltal\n'+
+                             '  • Zekrom\n\n'+
+                             '> Además de cualquier tipo de Mega-evolución.\n'+
+                             '```');
+       } else if(args[0] === 'moveban') {
            message.channel.send(':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n\n'+
-'`▸ Movimientos bugeados BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
-'  • Endure [Funciona cada vez que es usado]\n'+
-'  • Last Resort [Su restricción no funciona correctamente]\n'+
-'  • Memento + Focus Sash [Pokémon que tengan equipado Focus Sash no mueren al usar Memento]\n'+
-'  • Sleep Talk whilst awake [No consume PP, si ves a un oponente sin usar un movimiento mientras está despierto, es esto]\n'+
-'    - Si te quedaste sin PP en tus otros movimientos y tienes que usar Sleep Talk mientras estás despierto, por favor toma screenshot.\n\n'+
+                             '`▸ Movimientos bugeados BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
+                             '  • Endure [Funciona cada vez que es usado]\n'+
+                             '  • Last Resort [Su restricción no funciona correctamente]\n'+
+                             '  • Memento + Focus Sash [Pokémon que tengan equipado Focus Sash no mueren al usar Memento]\n'+
+                             '  • Sleep Talk whilst awake [No consume PP, si ves a un oponente sin usar un movimiento mientras está despierto, es esto]\n'+
+                             '    - Si te quedaste sin PP en tus otros movimientos y tienes que usar Sleep Talk mientras estás despierto, por favor toma screenshot.\n\n'+
+                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+                             '```\n'+
+                             '`▸ Movimientos bugeados NO BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Baton Pass [No pasa SpAtk, y se puede usar aunque tenga equipado un item que fuerce a usar movimientos ofensivos]\n'+
+                             '  • Chatter [No confunde al objetivo]\n'+
+                             '  • Detect [Movimientos de dos turnos pueden inflingir efectos secundarios]\n'+
+                             '  • Explosion [Puede hacer KO a objetivos aún cuando estos tienen Sturdy o Focus Sash]\n'+
+                             '  • Fake Out [Fake out no funciona cuando es cambiado con un movimiento como volt switch, roar, dragon tail, etc.]\n'+
+                             '  • Hex [No incrementa el daño si tiene un problema de estado]\n'+
+                             '  • Smack Down [No tira al Pokémon rival]\n'+
+                             '  • Trick + Choice Item [Cuando usas Trick en un oponente que posee un item "Choice", puedes seguir usando otros movimientos]\n'+
+                             '  • Volt-switch [Usable aún cuando el Pokémon rival posee Volt Absorb]\n\n'+
+                             '> El uso de estos movimientos no es reportable.\n'+
+                             '```\n'+
+                             '`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Belch [Puede ser usado aún sin comer una baya]\n'+
+                             '  • Doom Desire [No tiene que cargar]\n'+
+                             '  • Razor wind [No tiene que cargar]\n'+
+                             '  • Stockpile [Puede ser usado más de 3 veces]\n\n'+
+                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+                             '```\n'+
+                             '`▸ Movimientos aún no codificados NO BANEABLES en PvP`');   
+           message.channel.send('```md\n'+
+                             'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King´s Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
 
-'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
-'```\n'+
-'`▸ Movimientos bugeados NO BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Baton Pass [No pasa SpAtk, y se puede usar aunque tenga equipado un item que fuerce a usar movimientos ofensivos]\n'+
-'  • Chatter [No confunde al objetivo]\n'+
-'  • Detect [Movimientos de dos turnos pueden inflingir efectos secundarios]\n'+
-'  • Explosion [Puede hacer KO a objetivos aún cuando estos tienen Sturdy o Focus Sash]\n'+
-'  • Fake Out [Fake out no funciona cuando es cambiado con un movimiento como volt switch, roar, dragon tail, etc.]\n'+
-'  • Hex [No incrementa el daño si tiene un problema de estado]\n'+
-'  • Smack Down [No tira al Pokémon rival]\n'+
-'  • Trick + Choice Item [Cuando usas Trick en un oponente que posee un item "Choice", puedes seguir usando otros movimientos]\n'+
-'  • Volt-switch [Usable aún cuando el Pokémon rival posee Volt Absorb]\n\n'+
-
-'> El uso de estos movimientos no es reportable.\n'+
-'```\n'+
-'`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Belch [Puede ser usado aún sin comer una baya]\n'+
-'  • Doom Desire [No tiene que cargar]\n'+
-'  • Razor wind [No tiene que cargar]\n'+
-'  • Stockpile [Puede ser usado más de 3 veces]\n\n'+
-
-'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
-'```\n'+
-'`▸ Movimientos aún no codificados NO BANEABLES en PvP`');   
-                   message.channel.send('```md\n'+
-'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King´s Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
-
-'> El uso de estos movimientos no es reportable.\n'+
-'```');
-               } else if(args[0] === 'itemban') {
+                             '> El uso de estos movimientos no es reportable.\n'+
+                             '```');
+       } else if(args[0] === 'itemban') {
            message.channel.send(':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n\n'+
-
-'`▸ Ítems bugeados BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Shell bell [Cura el doble de cantidad de lo que debería]\n\n'+
-
-'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
-'```\n'+
-'`▸ Ítems bugeados NO BANEABLES en PvP`\n'+
-'```md\n'+
-'   • Ninguno\n'+
-'```\n'+
-'`▸ Ítems aún no codificados BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Ninguno\n'+
-'```\n'+
-'`▸ Ítems aún no codificados NO BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Ninguno\n'+
-'```');
-                           } else if(args[0] === 'abilityban') {
+                             '`▸ Ítems bugeados BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Shell bell [Cura el doble de cantidad de lo que debería]\n\n'+
+                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+                             '```\n'+
+                             '`▸ Ítems bugeados NO BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '   • Ninguno\n'+
+                             '```\n'+
+                             '`▸ Ítems aún no codificados BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Ninguno\n'+
+                             '```\n'+
+                             '`▸ Ítems aún no codificados NO BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Ninguno\n'+
+                             '```');
+       } else if(args[0] === 'abilityban') {
            message.channel.send(':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n'+
-
-'`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Defeatist [No reduce los stats a la mitad]\n'+
-'  • Fly + Gale Wings [Fly tiene prioridad en su primer turno y pierde su prioridad en el segundo]\n'+
-'  • Unburden [El Pokémon mantendra el aumento de velocidad aun si este es cambiado]\n'+
-'  • Wonder Guard + Focus Sash [Shedinja con Focus Sash no morirá con Spikes / Stealth Rock]\n\n'+
-
-'> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
-'```\n'+
-'`▸ Habilidades bugeadas NO BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Competitive [Sólo funciona con movimientos que bajen estadisticas, no con estados]\n'+
-'  • Simple [Los boosteos no se acumulan correctamente]\n'+
-'  • Synchronize [A veces falla al pasar un estado al Pokémon rival]\n'+
-'  • Trace [No copia la habilidad al cambiar después de un K.O.]\n'+
-'  • Habilidades de clima [El clima del Pokémon más rápido se impondrá en vez de el del Pokémon más lento si son puesto al mismo tiempo]\n\n'+
-
-'> El uso de estas habilidades no es reportable.\n'+
-'```\n'+
-'`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
-'```md\n'+
-'  • Ninguna\n'+
-'```\n'+
-'`▸ Movimientos aún no codificados NO BANEABLES en PvP`\n'+
-'```md\n'+
-'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
-
-'> El uso de estas habilidades no es reportable.\n'+
-'```');         
-                              } else if(args[0] === 'faq') {
+                             '`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Defeatist [No reduce los stats a la mitad]\n'+
+                             '  • Fly + Gale Wings [Fly tiene prioridad en su primer turno y pierde su prioridad en el segundo]\n'+
+                             '  • Unburden [El Pokémon mantendra el aumento de velocidad aun si este es cambiado]\n'+
+                             '  • Wonder Guard + Focus Sash [Shedinja con Focus Sash no morirá con Spikes / Stealth Rock]\n\n'+
+                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
+                             '```\n'+
+                             '`▸ Habilidades bugeadas NO BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Competitive [Sólo funciona con movimientos que bajen estadisticas, no con estados]\n'+
+                             '  • Simple [Los boosteos no se acumulan correctamente]\n'+
+                             '  • Synchronize [A veces falla al pasar un estado al Pokémon rival]\n'+
+                             '  • Trace [No copia la habilidad al cambiar después de un K.O.]\n'+
+                             '  • Habilidades de clima [El clima del Pokémon más rápido se impondrá en vez de el del Pokémon más lento si son puesto al mismo tiempo]\n\n'+
+                             '> El uso de estas habilidades no es reportable.\n'+
+                             '```\n'+
+                             '`▸ Movimientos aún no codificados BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             '  • Ninguna\n'+
+                             '```\n'+
+                             '`▸ Movimientos aún no codificados NO BANEABLES en PvP`\n'+
+                             '```md\n'+
+                             'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
+                             '> El uso de estas habilidades no es reportable.\n'+
+                             '```');         
+       } else if(args[0] === 'faq') {
            message.channel.send(':page_facing_up:  **PvP - FAQ**\n\n'+
 
-'`-` **__Temporadas__**\n\n'+
-
-'`▸ ¿Qué es una temporada?`\n'+
-'```md\n'+
-'  • Una temporada PvP es un periodo de tiempo en el cual se compite por llegar al puesto #1 ganando puntos cada vez que ganas una batalla clasificatoria.\n'+
-'```\n'+
-'`▸ ¿Cuánto tiempo dura?`\n'+
-'```md\n'+
-'  • Por lo general, una temporada suele durar 30 días, se reinicia los primeros días de cada mes.\n'+
-'```\n'+
-'`▸ ¿Hay premios?`\n'+
-'```md\n'+
-'  • Sí, los mejores jugadores suelen tener recompensas al final de cada temporada, además, se les invita a un torneo exclusivo para ellos.\n'+
-'```\n\n'+
-
-'`-` **__PvP Coins__**\n\n'+
-
-'`▸ ¿Qué son?`\n'+
-'```md\n'+
-'  • Las PvP Coins como su nombre lo dice, son un tipo de moneda dentro del juego.\n'+
-'```\n'+
-'`▸ ¿Cómo se consiguen?`\n'+
-'```md\n'+
-'  • La obtención de este tipo de moneda es exclusivo de las batallas PvP clasificatorias, 1 moneda por victoria.\n'+
-'```\n'+
-'`▸ ¿Para qué sirven?`\n'+
-'```md\n'+
-'  • Este tipo de moneda puede ser intercambiada por objetos exclusivos, los NPCs dedicados a la venta de ítems a cambio de las PvP Coins se encuentran en las principales ciudades y son llamados "PvP Coin Master".\n'+
-'```\n\n'+
-
-'`-` **__Reportes__**\n\n'+
-
-'`▸ ¿Qué es un reporte?`\n'+
-'```md\n'+
-'  • Si dentro de una partida clasificatoria se comete alguna infracción, esta se puede reportar en el foro para que castigue al infractor.\n'+
-'```\n'+
-'`▸ ¿Como se reporta a alguien?`\n'+
-'```md\n'+
-'  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.\n'+
-'```\n'+
-'`▸ ¿Los demás pueden ver mi reporte?`\n'+
-'```md\n'+
-'  • No, todos los reportes son privados, sólo el staff correspondiente lo puede ver.\n'+
-'```\n'+
-'`▸ Plantilla para reportar a alguien`\n'+
-'```md\n'+
-'**Titulo del reporte explicando cual es la infracción que se reporta**\n\n'+
-
-'Reported player: (Nombre del jugador reportado)\n'+
-'Reason: (Explicación por la que estás reportando al jugador)\n\n'+
-
-'> Debes incluir la evidencia en el reporte (imágenes o video).\n'+
-'> El reporte debe estar preferentemente escrito en inglés.\n'+
-'```');
+                             '`-` **__Temporadas__**\n\n'+
+                             '`▸ ¿Qué es una temporada?`\n'+
+                             '```md\n'+
+                             '  • Una temporada PvP es un periodo de tiempo en el cual se compite por llegar al puesto #1 ganando puntos cada vez que ganas una batalla clasificatoria.\n'+
+                             '```\n'+
+                             '`▸ ¿Cuánto tiempo dura?`\n'+
+                             '```md\n'+
+                             '  • Por lo general, una temporada suele durar 30 días, se reinicia los primeros días de cada mes.\n'+
+                             '```\n'+
+                             '`▸ ¿Hay premios?`\n'+
+                             '```md\n'+
+                             '  • Sí, los mejores jugadores suelen tener recompensas al final de cada temporada, además, se les invita a un torneo exclusivo para ellos.\n'+
+                             '```\n\n'+
+                             '`-` **__PvP Coins__**\n\n'+
+                             '`▸ ¿Qué son?`\n'+
+                             '```md\n'+
+                             '  • Las PvP Coins como su nombre lo dice, son un tipo de moneda dentro del juego.\n'+
+                             '```\n'+
+                             '`▸ ¿Cómo se consiguen?`\n'+
+                             '```md\n'+
+                             '  • La obtención de este tipo de moneda es exclusivo de las batallas PvP clasificatorias, 1 moneda por victoria.\n'+
+                             '```\n'+
+                             '`▸ ¿Para qué sirven?`\n'+
+                             '```md\n'+
+                             '  • Este tipo de moneda puede ser intercambiada por objetos exclusivos, los NPCs dedicados a la venta de ítems a cambio de las PvP Coins se encuentran en las principales ciudades y son llamados "PvP Coin Master".\n'+
+                             '```\n\n'+
+                             '`-` **__Reportes__**\n\n'+
+                             '`▸ ¿Qué es un reporte?`\n'+
+                             '```md\n'+
+                             '  • Si dentro de una partida clasificatoria se comete alguna infracción, esta se puede reportar en el foro para que castigue al infractor.\n'+
+                             '```\n'+
+                             '`▸ ¿Como se reporta a alguien?`\n'+
+                             '```md\n'+
+                             '  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.\n'+
+                             '```\n'+
+                             '`▸ ¿Los demás pueden ver mi reporte?`\n'+
+                             '```md\n'+
+                             '  • No, todos los reportes son privados, sólo el staff correspondiente lo puede ver.\n'+
+                             '```\n'+
+                             '`▸ Plantilla para reportar a alguien`\n'+
+                             '```md\n'+
+                             '**Titulo del reporte explicando cual es la infracción que se reporta**\n\n'+
+                             'Reported player: (Nombre del jugador reportado)\n'+
+                             'Reason: (Explicación por la que estás reportando al jugador)\n\n'+
+                             '> Debes incluir la evidencia en el reporte (imágenes o video).\n'+
+                             '> El reporte debe estar preferentemente escrito en inglés.\n'+
+                             '```');
+       } else if(args[0] === '123') {
+           message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
+                            '  1.- El uso de movimientos, habilidades e items que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
+                            '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
+                            '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
+                            '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
+                            '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.\n'+
+                            '  6.- El uso de las habilidades "Shadow Tag" y "Arena Trap" esta prohibido en las Rankeds.\n'+
+                            '  7.- 7. Puedes usar solo 1 de tus propias cuentas para PvP dentro de cada temporada. El uso de cualquier cuenta que no posea legítimamente, o el uso de más de 1 cuenta , resultará en un duro castigo. (Esta regla se modificó temporalmente para probar las cuentas alternativas en la escala de clasificación, sin embargo, no puede tener más de una cuenta en el Top 25 al final de la temporada.)\n'+
+                            '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
+                            '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que debería. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
+                            '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
+                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        }
 } else
 if (msg.startsWith(prefix + 'error')) {
