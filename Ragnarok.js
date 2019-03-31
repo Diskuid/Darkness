@@ -318,7 +318,7 @@ if (msg.startsWith(prefix + 'pvp')) {
 '```md\n'+
 '  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.\n'+
 '```\n'+
-'`▸ ¿Los demás pueden ver mi reporte?`
+'`▸ ¿Los demás pueden ver mi reporte?`\n'+
 '```md\n'+
 '  • No, todos los reportes son privados, sólo el staff correspondiente lo puede ver.\n'+
 '```\n'+
