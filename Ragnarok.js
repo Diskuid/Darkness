@@ -142,15 +142,13 @@ if (msg.startsWith(prefix + 'hola')) {
 if (msg.startsWith(prefix + 'pvp')) {
        if (args.length !== 1) {
            return message.channel.send(':bookmark:  **PLAYER VS PLAYER** \n```cs\n# Esta es la lista de comandos relacionados al PvP con la que actualmente cuento:\n\n'+
-                            '  '+prefix+'PvP Reglas      »   Muestra las reglas actuales del PvP.\n'+  
-                            '  '+prefix+'PvP PokeBan     »   Muestra los Pokémon baneados del PvP.\n'+
-                            '  '+prefix+'PvP MoveBan     »   Muestra los movimientos baneados del PvP.\n'+
-                            '  '+prefix+'PvP ItemBan     »   Muestra los movimientos baneados del PvP.\n'+
-                            '  '+prefix+'PvP AbilityBan     »   Muestra los movimientos baneados del PvP.\n'+
-                            '  '+prefix+'PvP Clausulas   »   Muestra las cláusulas vigentes en el PvP.\n'+
-                            '  '+prefix+'PvP Coins       »   Muestra que son y para que sirven las PvP Coins.\n'+
-                            '  '+prefix+'PvP Report      »   Muestra el link y una explicación acerca de como reportar  en el PvP.\n'+
-                            '  '+prefix+'PvP Temporadas  »   Muestra información acerca de las temporadas de PvP.\n```');
+                            '  '+prefix+'PvP Reglas       »   Muestra las reglas actuales del PvP.\n'+  
+                            '  '+prefix+'PvP PokeBan      »   Muestra los Pokémon baneados del PvP.\n'+
+                            '  '+prefix+'PvP MoveBan      »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP ItemBan      »   Muestra los ítems baneados del PvP.\n'+
+                            '  '+prefix+'PvP AbilityBan   »   Muestra las habilidades baneadas del PvP.\n'+
+                            '  '+prefix+'PvP Clausulas    »   Muestra las cláusulas vigentes en el PvP.\n'+
+                            '  '+prefix+'PvP FAQ          »   Muestra las preguntas más frecuentes relacionadas a las coins PvP, temporadas y reportes.```');
        } else if(args[0] === 'reglas') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades e items que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
@@ -243,7 +241,7 @@ if (msg.startsWith(prefix + 'pvp')) {
 
 '> El uso de estos movimientos no es reportable.\n'+
 '```');
-                           } else if(args[0] === 'abiliban') {
+                           } else if(args[0] === 'abilityban') {
            message.channel.send(':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n'+
 
 '`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
