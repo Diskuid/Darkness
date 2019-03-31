@@ -316,7 +316,7 @@ if (msg.startsWith(prefix + 'pvp')) {
 '```\n'+
 '`▸ ¿Como se reporta a alguien?`\n'+
 '```md\n'+
-'  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.
+'  • Para reportar a alguien simplemente se debe entrar en el foro, y en la sección correspondiente hacer el reporte ("Report Center" > "Silver Server"), este debe contener evidencia de dicha infracción.\n'+
 '```\n'+
 '`▸ ¿Los demás pueden ver mi reporte?`
 '```md\n'+
