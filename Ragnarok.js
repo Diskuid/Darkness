@@ -167,7 +167,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, and Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
                             '  • Cláusula "Species": Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
                             '  • Cláusula del sueño: Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
-                            '  • Cláusula "Baton Pass": Un Pokémon no puede pasar +Velocidad y otra estadística simultáneamente. (Limitado a un solo Pokémon con Baton Pass por equipo.)"\n'+
+                            '  • Cláusula "Baton Pass": Un Pokémon no puede pasar +Velocidad y otra estadística simultáneamente. (Limitado a un solo Pokémon con Baton Pass por equipo.)\n'+
                             '  • Cláusula de Evasión: Un Pokémon no puede tener movimientos que incrementen o disminuyan la evasión o la precisión en su moveset. El uso de este tipo de movimientos está prohibidos.\n'+
                             '  • Cláusula "Swagger": El uso del movimiento "Swagger" está prohibido.\n\n'+
                                 '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
