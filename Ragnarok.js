@@ -510,14 +510,23 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '```');
        }
 } else
-if (msg.startsWith(prefix + 'error')) {
+               if (msg.startsWith(prefix + 'error')) {
 
-message.reply('nel prro')
+                     message.reply('nel prro')
   .then(msg => {
     msg.delete(10000)
   })
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+} else
+               if (msg.startsWith(prefix + 'ren')) {
 
+                   message.reply('```diff\n'+
+                            '- RENOVANDO -'
+                            '```')
+  .then(msg => {
+    msg.delete(1000)
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
       } else
 if (msg.startsWith(prefix + 'alola')) {
        message.delete();
