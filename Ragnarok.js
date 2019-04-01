@@ -150,7 +150,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  '+prefix+'PvP Clausulas    »   Muestra las cláusulas vigentes en el PvP.\n'+
                             '  '+prefix+'PvP FAQ          »   Muestra las preguntas más frecuentes relacionadas a las PvP coins, temporadas y reportes.```');
        } else if(args[0] === 'reglas') {
-           message.channel.send(':scroll:  **PvP - REGLAS**\n\n`▸ Reglas generales del PvP competitivo.\n````diff\n'+
+           message.channel.send(':scroll:  **PvP - REGLAS**\n\n`▸ Reglas generales del PvP competitivo.`\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades e ítems que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
                             '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
@@ -332,7 +332,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '> El reporte debe estar preferentemente escrito en inglés.\n'+
                              '```');
        } else if(args[0] === '123') {
-           message.channel.send(':scroll:  **PvP - REGLAS**\n\n`▸ Reglas generales del PvP competitivo.\n````diff\n'+
+           message.channel.send(':scroll:  **PvP - REGLAS**\n\n`▸ Reglas generales del PvP competitivo.`\n```diff\n'+
                             '  1.- El uso de movimientos, habilidades e ítems que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
                             '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
