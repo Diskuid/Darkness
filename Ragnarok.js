@@ -522,9 +522,7 @@ if (msg.startsWith(prefix + 'pvp')) {
        message.delete();
             message.channel.send('```diff\n'+
                             '- RENOVANDO -\n'+
-                            '```')
-  .then(msg => {
-    msg.delete(1000)
+                            '```'
   })
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
       } else
