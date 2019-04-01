@@ -19,7 +19,7 @@ client.on("message", (message) => {
     let texto = args.join(" ");
     let user = message.mentions.users.first();
     let razon = args.slice(1).join(' ');
-   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "pinchi", "pito", "coño", "anal", "panocha", "teta", "polla", "mecos", "culo", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche", "nalga"];
+   const palabras = ["alv", "verga", "goder", "joder", "mierda", "culiao", "puto", "puta", "chinga", "cabron", "pinchi", "pito", "coño", "panocha", "teta", "polla", "mecos", "culo", "coger", "follar", "folla", "mamar", "paja", "pajear", "marica", "marico", "pendejo", "boludo", "cagon", "cochar", "chupala", "coña", "joto", "jota", "nigga", "chupa", "pija", "orto", "chota", "puti", "joti", "boludi", "vergui", "culi", "pendeji", "culi", "concha", "hdp", "ctm", "ql", "ptm", "gnr", "mlp", "idiota", "idioti", "pinche", "nalga"];
    
    
    if(palabras.some(p => msg.includes(p))){
@@ -161,16 +161,16 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultará en un castigo.\n'+
                             '  9.- Clefable con Unaware con el movimiento Softboiled están baneados del competitivo, esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n'+
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
-                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'clausulas') {
-           message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n```diff\n'+
+           message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n```md\n'+
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, and Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
                             '  • Cláusula "Species": Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
                             '  • Cláusula del sueño: Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
                             '  • Cláusula "Baton Pass": Un Pokémon no puede pasar +Velocidad y otra estadística simultáneamente. (Limitado a un solo Pokémon con Baton Pass por equipo.)\n'+
                             '  • Cláusula de Evasión: Un Pokémon no puede tener movimientos que incrementen o disminuyan la evasión o la precisión en su moveset. El uso de este tipo de movimientos está prohibidos.\n'+
                             '  • Cláusula "Swagger": El uso del movimiento "Swagger" está prohibido.\n\n'+
-                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                            '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'pokeban') {
            message.channel.send(':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n'+
                              '`▸ Pokémon prohibidos en PvP.`\n'+
@@ -334,17 +334,17 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '```');
        } else if(args[0] === '123') {
            message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
-                            '  1.- El uso de movimientos, habilidades e items que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
+                            '  1.- El uso de movimientos, habilidades e ítems que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
                             '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
-                            '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla esta prohibido.\n'+
-                            '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomaran acciones.\n'+
+                            '  4.- Colocar un estado de condición (Envenenar, Quemar, Paralizar, Dormir, Congelar) en tu Pokémon antes de una batalla está prohibido.\n'+
+                            '  5.- Elevar intencionalmente el ranking de otra cuenta, de cualquier forma, esta prohibido, y si se es capturado se tomarán acciones.\n'+
                             '  6.- El uso de las habilidades "Shadow Tag" y "Arena Trap" esta prohibido en las Rankeds.\n'+
-                            '  7.- 7. Puedes usar solo 1 de tus propias cuentas para PvP dentro de cada temporada. El uso de cualquier cuenta que no posea legítimamente, o el uso de más de 1 cuenta , resultará en un duro castigo. (Esta regla se modificó temporalmente para probar las cuentas alternativas en la escala de clasificación, sin embargo, no puede tener más de una cuenta en el Top 25 al final de la temporada.)\n'+
-                            '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultara en un castigo.\n'+
-                            '  9.- "Unaware" esta actualmente baneado del PvP hasta que sea arreglado. La habilidad ignora mas stats potenciados de lo que debería. (Ejemplo: Choice Band). Así como Clefable con Unaware con el movimiento Softboiled están baneados del competitivo. Esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n\n'+
+                            '  7.- Puedes usar sólo 1 de tus propias cuentas para PvP dentro de cada temporada. El uso de cualquier cuenta que no posea legítimamente, o el uso de más de 1 cuenta resultará en un duro castigo. (Permitidas 2 cuentas propias temporalmente.)\n'+
+                            '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultará en un castigo.\n'+
+                            '  9.- Clefable con Unaware con el movimiento Softboiled están baneados del competitivo, esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n'+
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
-                                '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
+                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        }
 } else
 if (msg.startsWith(prefix + 'error')) {
