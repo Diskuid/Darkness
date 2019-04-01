@@ -105,21 +105,22 @@ if (msg.startsWith(prefix + 'help')){
         message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
                             '```cs\n'+
                             '# PvP Rankeds\n'+
-                            '  '+prefix+'PvP Reglas        »   Muestra las reglas actuales del PvP.\n'+  
-                            '  '+prefix+'PvP PokeBan       »   Muestra los Pokémon baneados del PvP.\n'+
-                            '  '+prefix+'PvP MoveBan       »   Muestra los movimientos y habilidades baneados del PvP.\n'+
-                            '  '+prefix+'PvP Clausulas     »   Muestra las cláusulas vigentes en el PvP.\n'+
-                            '  '+prefix+'PvP Coins         »   Muestra que son y para que sirven las PvP Coins.\n'+
-                            '  '+prefix+'PvP Temporadas    »   Muestra información acerca de las temporadas de PvP.\n\n'+
-                            '# Informacion\n'+
-                            '  '+prefix+'Reglas            »   Muestra las reglas del juego, el incumplimiento de estas puede resultar en ban.\n'+  
-                            '  '+prefix+'Dig <Region>      »   Muestra información acerca de los spots para hacer dig en determinada región.\n'+
-                            '  '+prefix+'Evs <Region>      »   Muestra información acerca de los spots de Evs en determinada región.\n\n'+
+                            '  '+prefix+'PvP Reglas       »   Muestra las reglas actuales del PvP.\n'+  
+                            '  '+prefix+'PvP PokeBan      »   Muestra los Pokémon baneados del PvP.\n'+
+                            '  '+prefix+'PvP MoveBan      »   Muestra los movimientos baneados del PvP.\n'+
+                            '  '+prefix+'PvP ItemBan      »   Muestra los ítems baneados del PvP.\n'+
+                            '  '+prefix+'PvP AbilityBan   »   Muestra las habilidades baneadas del PvP.\n'+
+                            '  '+prefix+'PvP Clausulas    »   Muestra las cláusulas vigentes en el PvP.\n'+
+                            '  '+prefix+'PvP FAQ          »   Muestra las preguntas más frecuentes relacionadas a las PvP coins, temporadas y reportes.\n\n'+
+                            '# Información\n'+
+                            '  '+prefix+'Reglas            »   Muestra las reglas del juego, el incumplimiento de estas puede resultar en un baneo permanente.\n'+  
+                            '  '+prefix+'Dig <Región>      »   Muestra información acerca de los spots para hacer dig en determinada región.\n'+
+                            '  '+prefix+'Evs <Región>      »   Muestra información acerca de los spots de Evs en determinada región.\n\n'+
                             '# Reportes\n'+
                             '  '+prefix+'Report            »   Muestra información acerca de como reportar.\n'+  
                             '  '+prefix+'Report Trade      »   Muestra información acerca de como reportar una infracción relacionada con los intercambios.\n'+
                             '  '+prefix+'Report PvP        »   Muestra información acerca de como reportar una infracción relacionada con el PvP.\n'+
-                            '  '+prefix+'Report chat       »   Muestra información acerca de como reportar una infracción relacionada con los Chat globales.\n'+
+                            '  '+prefix+'Report chat       »   Muestra información acerca de como reportar una infracción relacionada con los chats globales.\n'+
                             '  '+prefix+'Report Bug        »   Muestra información acerca de como reportar cualquier tipo de bug.\n\n'+
                             '# Baneos\n'+
                             '  '+prefix+'Ban               »   Muestra información acerca de los baneos en PRO.\n'+  
