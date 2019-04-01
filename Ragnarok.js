@@ -353,9 +353,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  • Cláusula de Evasión: Un Pokémon no puede tener movimientos que incrementen o disminuyan la evasión o la precisión en su moveset. El uso de este tipo de movimientos está prohibidos.\n'+
                             '  • Cláusula "Swagger": El uso del movimiento "Swagger" está prohibido.\n\n'+
                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -```\n\n'+
-                            ':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n');
-          message.channel.send('`▸ Pokémon prohibidos en PvP.`\n'+
-                             '```md\n'+
+                            ':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n'+
+                            '`▸ Pokémon prohibidos en PvP.`\n');
+          message.channel.send('```md\n'+
                              '  • Arceus\n'+
                              '  • Blaziken\n'+
                              '  • Darkrai\n'+
