@@ -521,7 +521,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                if (msg.startsWith(prefix + 'ren')) {
 
                    message.reply('```diff\n'+
-                            '- RENOVANDO -'
+                            '- RENOVANDO -\n'+
                             '```')
   .then(msg => {
     msg.delete(1000)
