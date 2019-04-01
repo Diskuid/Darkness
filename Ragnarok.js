@@ -165,7 +165,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -\n```');
        } else if(args[0] === 'clausulas') {
            message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n```md\n\n'+
-                            '`▸ Cláusulas vigentes en el PvP competitivo.`\n'
+                            '`▸ Cláusulas vigentes en el PvP competitivo.`\n'+
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, y Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
                             '  • Cláusula "Species": Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
                             '  • Cláusula del sueño: Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
