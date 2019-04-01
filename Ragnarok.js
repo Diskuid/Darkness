@@ -461,9 +461,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '> El uso de estas habilidades no es reportable.\n'+
                              '```\n\n'+
                              ':page_facing_up:  **PvP - FAQ**\n\n'+
-                             '`-` **__Temporadas__**\n\n');         
-           message.channel.send('`▸ ¿Qué es una temporada?`\n'+
-                             '```md\n'+
+                             '`-` **__Temporadas__**\n\n'+
+                             '`▸ ¿Qué es una temporada?`\n');         
+           message.channel.send('```md\n'+
                              '  • Una temporada PvP es un periodo de tiempo en el cual se compite por llegar al puesto #1 ganando puntos cada vez que ganas una batalla clasificatoria.\n'+
                              '```\n'+
                              '`▸ ¿Cuánto tiempo dura?`\n'+
