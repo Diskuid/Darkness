@@ -332,7 +332,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '> El reporte debe estar preferentemente escrito en inglés.\n'+
                              '```');
        } else if(args[0] === '123') {
-           message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n'+
+           message.channel.send(':scroll:  **PvP - REGLAS**\n```diff\n\n'+
                             '  1.- El uso de movimientos, habilidades e ítems que estén bugeados o no codificados de los cuales se pueda abusar en PvP esta prohibido.\n'+  
                             '  2.- Todos los Pokémon con stats base de más de 601 están prohibidos en las batallas clasificatorias (excepto Slaking). Otros Pokémon tier "Uber" también están prohibidos (específicamente "Blaziken - Speed Boost" [Blaziken - Blaze sí está permitido]). (Puedes revisar la lista completa con el comando ".PvP PokeBan".)\n'+
                             '  3.- La retención de tiempo esta prohibida. (Atacar hasta el último segundo y cosas así esta prohibido, sin embargo, el uso de movimientos repetidos esta permitido.)\n'+
@@ -343,9 +343,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  8.- Forzar a los jugadores a desconectarse en una batalla clasificatoria con información falsa resultará en un castigo.\n'+
                             '  9.- Clefable con Unaware con el movimiento Softboiled están baneados del competitivo, esto debido a la entrada de las habilidades ocultas en la generación 5 en donde ese movimiento fue removido del set de movimientos de Clefable.\n'+
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
-                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -```\n\n'+
-                               ':scroll:  **PvP - CLÁUSULAS**\n');
-           message.channel.send('```md\n'+
+                            '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -```\n\n');
+           message.channel.send(':scroll:  **PvP - CLÁUSULAS**\n\n'+
+                                '```md\n'+
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, y Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
                             '  • Cláusula "Species": Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
                             '  • Cláusula del sueño: Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
