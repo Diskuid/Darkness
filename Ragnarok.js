@@ -345,7 +345,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  10.- Sólo se puede usar un tipo de Rotom por equipo.\n\n'+
                             '- Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -```\n\n'+
                                ':scroll:  **PvP - CLÁUSULAS**\n');
-           message.channel.send(' /n```md\n'+
+           message.channel.send('```md\n'+
                             '  • Cláusula "OHKO": Movimientos OHKO (Fissure, Guillotine, Horn Drill, y Sheer Cold) están prohibidos in las batallas clasificatorias.\n'+  
                             '  • Cláusula "Species": Dos Pokémon de la misma especie no podrán estar en el mismo equipo.\n'+
                             '  • Cláusula del sueño: Si ya has puesto un Pokémon a dormir en el equipo contrario, y todavía está durmiendo, no puedes poner a otro para dormir. (Pokémon que se ponen en este estado por ataque propio no se tienen en cuenta.)\n'+
@@ -377,9 +377,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '  • Zekrom\n\n'+
                              '> Además de cualquier tipo de Mega-evolución.\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n\n');
-           message.channel.send('`▸ Movimientos bugeados BANEABLES en PvP`\n'+
-                             '```md\n'+
+                             ':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n\n'+
+                              '`▸ Movimientos bugeados BANEABLES en PvP`\n');
+           message.channel.send('```md\n'+
                              '  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
                              '  • Endure [Funciona cada vez que es usado]\n'+
                              '  • Last Resort [Su restricción no funciona correctamente]\n'+
@@ -414,9 +414,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King´s Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
                              '> El uso de estos movimientos no es reportable.\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n\n');
-           message.channel.send('`▸ Ítems bugeados BANEABLES en PvP`\n'+
-                             '```md\n'+
+                             ':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n\n'+
+                             '`▸ Ítems bugeados BANEABLES en PvP`\n');
+           message.channel.send('```md\n'+
                              '  • Shell bell [Cura el doble de cantidad de lo que debería]\n\n'+
                              '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video.\n'+
                              '```\n'+
@@ -432,9 +432,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '```md\n'+
                              '  • Ninguno\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n');
-           message.channel.send('`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
-                             '```md\n'+
+                             ':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n'+
+                             '`▸ Habilidades bugeadas BANEABLES en PvP`\n');
+           message.channel.send('```md\n'+
                              '  • Defeatist [No reduce los stats a la mitad]\n'+
                              '  • Fly + Gale Wings [Fly tiene prioridad en su primer turno y pierde su prioridad en el segundo]\n'+
                              '  • Unburden [El Pokémon mantendra el aumento de velocidad aun si este es cambiado]\n'+
@@ -459,9 +459,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
                              '> El uso de estas habilidades no es reportable.\n'+
                              '```\n\n'+
-                             ':page_facing_up:  **PvP - FAQ**\n\n');         
-           message.channel.send('`-` **__Temporadas__**\n\n'+
-                             '`▸ ¿Qué es una temporada?`\n'+
+                             ':page_facing_up:  **PvP - FAQ**\n\n'+
+                             '`-` **__Temporadas__**\n\n');         
+           message.channel.send('`▸ ¿Qué es una temporada?`\n'+
                              '```md\n'+
                              '  • Una temporada PvP es un periodo de tiempo en el cual se compite por llegar al puesto #1 ganando puntos cada vez que ganas una batalla clasificatoria.\n'+
                              '```\n'+
