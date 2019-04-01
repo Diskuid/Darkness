@@ -102,7 +102,8 @@ if (msg.startsWith(prefix + 'help')){
       .setFooter("Ragnarök Guild", client.user.avatarURL)
       .setTimestamp()
       message.channel.send({embed});
-        message.author.send(':notebook: ** Ragnarök bot - Comandos **\n'+
+        message.author.send(':page_facing_up: **RAGNARÖK GUILD BOT**\n\n'+
+                            '`★ Estos son algunos de los comandos con los que cuento actualmente`\n'+
                             '```cs\n'+
                             '# PvP Rankeds\n'+
                             '  '+prefix+'PvP Reglas       »   Muestra las reglas actuales del PvP.\n'+  
