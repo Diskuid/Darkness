@@ -354,7 +354,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                             '  • Cláusula de Evasión: Un Pokémon no puede tener movimientos que incrementen o disminuyan la evasión o la precisión en su moveset. El uso de este tipo de movimientos está prohibidos.\n'+
                             '  • Cláusula "Swagger": El uso del movimiento "Swagger" está prohibido.\n\n'+
                             '> Para reportar cualquiera de estas infracciones son necesarias capturas de pantalla y/o video. -```\n\n'+
-                            ':scroll:  **PvP - POKÉMON PROHIBIDOS**\n');
+                            ':scroll:  **PvP - POKÉMON PROHIBIDOS**\n\n');
           message.channel.send('`▸ Pokémon prohibidos en PvP.`\n'+
                              '```md\n'+
                              '  • Arceus\n'+
@@ -378,7 +378,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '  • Zekrom\n\n'+
                              '> Además de cualquier tipo de Mega-evolución.\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n');
+                             ':scroll:  **PvP - MOVIMIENTOS PROHIBIDOS**\n\n');
            message.channel.send('`▸ Movimientos bugeados BANEABLES en PvP`\n'+
                              '```md\n'+
                              '  • Burn Up [No quita el tipo fuego a tu Pokémon después de usar el ataque]\n'+
@@ -413,10 +413,9 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '`▸ Movimientos aún no codificados NO BANEABLES en PvP`');   
            message.channel.send('```md\n'+
                              'Attract, Bide, Camoulage, Captivate, Conversion, Conversion 2, Echoed Voice, Entrainment, Fiery Dance, Gastro acid, Grudge, Healing Wish, Ingrain, King´s Shield, Lock On, Me First, Metronome, Mimic, Minimize, Mirror Move, Mud Sport, Nature Gift, Nature Power, Nightmare, Power Split, Power Swap, Power Trick, Rage Powder, Reflect type, Rollout, Sacred Sword, Safeguard, Skill Swap, Snatch, Stored Power, Substitute, Tailwind. Transform, Uproar, Water Sport.\n\n'+
-
                              '> El uso de estos movimientos no es reportable.\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n');
+                             ':scroll:  **PvP - ÍTEMS PROHIBIDOS**\n\n');
            message.channel.send('`▸ Ítems bugeados BANEABLES en PvP`\n'+
                              '```md\n'+
                              '  • Shell bell [Cura el doble de cantidad de lo que debería]\n\n'+
@@ -434,7 +433,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '```md\n'+
                              '  • Ninguno\n'+
                              '```\n\n'+
-                             ':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n');
+                             ':scroll:  **PvP - HABILIDADES PROHIBIDAS**\n\n');
            message.channel.send('`▸ Habilidades bugeadas BANEABLES en PvP`\n'+
                              '```md\n'+
                              '  • Defeatist [No reduce los stats a la mitad]\n'+
@@ -461,7 +460,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              'Air Lock, Aura Break, Color Change, Cute Charm, Dark Aura, Fairy Aura, Flash Fire, Flower Gift, Flower Veil, Forecast, Friend Guard, Fur Coat, Grass Pelt, Honey Gather, Ice Body, Illuminate, Illusion, Imposter, Klutz, Minus, Moody, Multitype, Plus, Refrigerate, Slow Start, Stance Change, Symbiosis, Telepathy, Teravolt, Turboblaze, Victory Star, Zen Mode.\n\n'+
                              '> El uso de estas habilidades no es reportable.\n'+
                              '```\n\n'+
-                             ':page_facing_up:  **PvP - FAQ**\n');         
+                             ':page_facing_up:  **PvP - FAQ**\n\n');         
            message.channel.send('`-` **__Temporadas__**\n\n'+
                              '`▸ ¿Qué es una temporada?`\n'+
                              '```md\n'+
