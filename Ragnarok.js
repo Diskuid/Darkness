@@ -193,6 +193,7 @@ if (msg.startsWith(prefix + 'pvp')) {
                              '  • Palkia\n'+
                              '  • Rayquaza\n'+
                              '  • Reshiram\n'+
+                             '  • Shaymin + su forma Sky\n'+
                              '  • Xerneas\n'+
                              '  • Yveltal\n'+
                              '  • Zekrom\n\n'+
