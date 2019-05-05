@@ -142,7 +142,7 @@ if (msg.startsWith(prefix + 'hola')) {
 
        } else
 if (msg.startsWith(prefix + 'reglas')) {
-            message.channel.send(':scroll: **REGLAS GENERALES** \n\n'+
+            message.channel.send(':warning:  **REGLAS GENERALES** \n\n'+
                                 '**1.** Al registrarte en Pokemon Revolution Online aceptas y reconoces los Términos y Condiciones y estas Reglas del juego.\n'+
                                 '**2.** Cada persona tiene permitido un máximo de cuatro cuentas propias.\n'+
                                 '       *- Sólo se puede tener una cuenta por dirección de correo electrónico.*\n'+
