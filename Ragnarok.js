@@ -162,7 +162,26 @@ if (msg.startsWith(prefix + 'reglas')) {
                                 '       - Software externo que ofrece ventajas injustas, que no están respaldados por PRO.*\n'+
                                 '**6.** El abuso de fallas y no reportarlas tan pronto como sea posible, resultará en sanciones.\n'+
                                 '       *- Este tipo de infracción no se anulará a menos que todas las ganancias ilegítimas puedan ser eliminadas de la cuenta.*');
-       
+               message.channel.send('**7.** No reportar evidencia incriminatoria, ayudar a un usuario a evadir un ban, y la ocultación de pertenencias obtenidas ilegalmente están estrictamente prohibidas.\n'+
+                                   '       *- No informar sobre un usuario que sabes que ha hecho trampa o ha abusado de errores.\n'+
+                                   '       - Compartir cuentas con un usuario que está baneado permanentemente.\n'+
+                                   '       - Comerciar Pokémon, artículos, dinero, etc., robados, capturados mediante bots o ganados ilegítimamente sabiendo de su origen.*\n'+
+                                   '**8.** Las Reglas de Intercambio deben ser seguidas en todo momento. - Para más información usar el comando ".trade reglas".\n'+
+                                   '       *- Las reglas pueden diferir dependiendo de la plataforma en la que el usuario está usando (el foro, el juego o el chat de discord).\n'+
+                                   '       - Estafar a otro usuario al momento del intercambio resultará en una prohibición permanente inmediata.*\n'+
+                                   '**9.** Al jugar PvP Rankeds en PRO, aceptas las Reglas de PvP. - Para más información usar el comando ".pvp".\n'+
+                                   '       *- Las reglas de PvP no se aplican a las batallas no clasificatorias o amistosas.*\n'+
+                                   '**10.** Al participar en los chats del juego, aceptas y reconoces las Reglas de chat. - Para más información usar el comando ".chat reglas".\n'+
+                                   '       *- Los propietarios de canales privados o líderes de clanes tienen derecho a moderar sus canales.\n'+
+                                   '       - Los insultos y el acoso nunca son aceptables, incluso cuando se hacen en canales privados.\n'+
+                                   '       - El personal de PRO sólo moderará los mensajes privados si reportados a través del Centro de Reportes.* \n'+
+                                   '**11.** El comportamiento deplorable, la profanidad, el spam y la publicación de contenido inapropiado y/o para adultos están en prohibidos.\n'+
+                                   '       *- El personal de PRO informará a las autoridades correspondientes si su delito se considera ilegal.*\n');
+                  message.channel.send('**12.** Queda prohibido publicar enlaces maliciosos, como enlaces de phishing, contenido para adultos o cualquier cosa inapropiada para niños.\n'+
+                                      '**13.** Hacerse pasar por un miembro del personal de PRO está estrictamente prohibido y resultará en una sanción severa si se intenta.\n'+
+                                      '**14.** Al registrar una cuenta, no debe tomar un nombre de usuario que sea inadecuado para los niños.\n'+
+                                      '       *- Puedes llegar a ser baneado permanentemente si el nombre de tu cuenta se considera inapropiado.*\n'+
+                                      '**15.** Obtener acceso no autorizado a la cuenta de otro usuario está estrictamente prohibido y tendrá graves consecuencias.\n');
       } else
 if (msg.startsWith(prefix + 'pvp')) {
        if (args.length !== 1) {
