@@ -143,24 +143,24 @@ if (msg.startsWith(prefix + 'hola')) {
        } else
 if (msg.startsWith(prefix + 'reglas')) {
             message.channel.send(':scroll: **REGLAS GENERALES** \n\n'+
-                                '**1.** Al registrarte en Pokemon Revolution Online aceptas y reconoces los Términos y Condiciones y estas Reglas del juego.\n'
-                                '**2.** Cada persona tiene permitido un máximo de cuatro cuentas propias.\n'
-                                '       *- Sólo se puede tener una cuenta por dirección de correo electrónico.*\n'
-                                '**3.** No se recomienda compartir cuentas, pero está permitido.\n'
-                                '        *- El propietario de la cuenta será responsable por cualquier infracción cometida en dicha cuenta.\n'
-                                '        - Las cuentas compartidas con usted no cuentan como una de sus 4 cuentas a menos que se le otorgue la propiedad total de dicha cuenta.\n'
-                                '        - No se ofrecerá soporte en casos en los que se está baneado por compartir una IP en la cual se cometió una infracción.*\n'
-                                '**4.** Intercambios por dinero u objetos in-real life están estrictamente prohibidos y todas las cuentas involucradas recibirán una prohibición permanente si se llevan a cabo.\n'
-                                '       Esto incluye, pero no se limita a:\n'
-                                '       *- Comprar o vender cualquier cosa en PRO por dinero o bienes en la vida real.\n'
-                                '       - Intercambiar cualquier cosa en PRO por artículos, dinero, etc. en otro juego.\n'
-                                '       - Comprar o vender una cuenta en PRO por dinero o bienes en la vida real.*\n'
-                                '**5.** El uso de cualquier tipo de software no autorizado, piratería o edición del juego y/o cliente está prohibido. \n'
-                                '       Esto incluye:\n'
-                                '        *- Cualquier tipo de software automatizado. (bots, macro).\n'
-                                '        - Software que se inyecta en los archivos de PRO para dar ventajas injustas. (hack de velocidad).\n'
-                                '        - Software externo que ofrece ventajas injustas, que no están respaldados por PRO.*\n'
-                                '**6.** El abuso de fallas y no reportarlas tan pronto como sea posible, resultará en sanciones.\n'
+                                '**1.** Al registrarte en Pokemon Revolution Online aceptas y reconoces los Términos y Condiciones y estas Reglas del juego.\n'+
+                                '**2.** Cada persona tiene permitido un máximo de cuatro cuentas propias.\n'+
+                                '       *- Sólo se puede tener una cuenta por dirección de correo electrónico.*\n'+
+                                '**3.** No se recomienda compartir cuentas, pero está permitido.\n'+
+                                '        *- El propietario de la cuenta será responsable por cualquier infracción cometida en dicha cuenta.\n'+
+                                '        - Las cuentas compartidas con usted no cuentan como una de sus 4 cuentas a menos que se le otorgue la propiedad total de dicha cuenta.\n'+
+                                '        - No se ofrecerá soporte en casos en los que se está baneado por compartir una IP en la cual se cometió una infracción.*\n'+
+                                '**4.** Intercambios por dinero u objetos in-real life están estrictamente prohibidos y todas las cuentas involucradas recibirán una prohibición permanente si se llevan a cabo.\n'+
+                                '       Esto incluye, pero no se limita a:\n'+
+                                '       *- Comprar o vender cualquier cosa en PRO por dinero o bienes en la vida real.\n'+
+                                '       - Intercambiar cualquier cosa en PRO por artículos, dinero, etc. en otro juego.\n'+
+                                '       - Comprar o vender una cuenta en PRO por dinero o bienes en la vida real.*\n'+
+                                '**5.** El uso de cualquier tipo de software no autorizado, piratería o edición del juego y/o cliente está prohibido. \n'+
+                                '       Esto incluye:\n'+
+                                '        *- Cualquier tipo de software automatizado. (bots, macro).\n'+
+                                '        - Software que se inyecta en los archivos de PRO para dar ventajas injustas. (hack de velocidad).\n'+
+                                '        - Software externo que ofrece ventajas injustas, que no están respaldados por PRO.*\n'+
+                                '**6.** El abuso de fallas y no reportarlas tan pronto como sea posible, resultará en sanciones.\n'+
                                 '       *- Este tipo de infracción no se anulará a menos que todas las ganancias ilegítimas puedan ser eliminadas de la cuenta.*');
        
       } else
